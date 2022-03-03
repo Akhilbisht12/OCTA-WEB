@@ -39,7 +39,13 @@ const PhoneView = ({ showPhone, setShowPhone, record }) => {
         <div>
           <div className="form-control my-1 d-flex w-100 align-items-center justify-content-between">
             <div>{record.patientID ? record.patientID.phone : ""}</div>
-            <div className="btn  btn-primary">call</div>
+            <div className="btn  btn-primary">
+              <a
+                href={record.patientID ? `tel:${record.patientID.phone}` : "#"}
+              >
+                Call
+              </a>
+            </div>
           </div>
           <div
             className="form-control my-1 text-wrap"

@@ -1,23 +1,50 @@
 /**
  * App Header
  */
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Avatar_05,
-  Avatar_06,Avatar_08,Avatar_09,Avatar_13,Avatar_17,Avatar_21} from '../../Entryfile/imagepath'
-  import Cookies from 'universal-cookie'
+import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+import {
+  headerlogo,
+  lnEnglish,
+  lnFrench,
+  lnSpanish,
+  lnGerman,
+  Avatar_02,
+  Avatar_03,
+  Avatar_05,
+  Avatar_06,
+  Avatar_08,
+  Avatar_09,
+  Avatar_13,
+  Avatar_17,
+  Avatar_21,
+} from "../../Entryfile/imagepath";
+import Cookies from "universal-cookie";
 
 class Header extends Component {
-
-   render() {
-    const {  location } = this.props
-    let pathname = location.pathname
-    const cookie = new Cookies()
-    const agent = cookie.get('agent').agent
-    console.log(agent)
-      return (
-         <div className="header" style={{right:"0px"}}>
+  render() {
+    const { location } = this.props;
+    let pathname = location.pathname;
+    const cookie = new Cookies();
+    // const agent = cookie.get('agent').agent
+    const agent = {
+      _id: "61bb2160f2a45912dc500415",
+      firstName: "OCTA",
+      lastName: "Bot",
+      email: "doodle@lms.in",
+      phone: 8979877325,
+      agentID: "1234",
+      role: "agent",
+      photo: {
+        secure_url:
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      },
+      createdAt: "2021-12-16T11:22:08.932+00:00",
+    };
+    // console.log(agent)
+    return (
+      <div className="header" style={{ right: "0px" }}>
         {/* Logo */}
         <div className="header-left">
           <Link to="/app/main/dashboard" className="logo">
@@ -25,8 +52,19 @@ class Header extends Component {
           </Link>
         </div>
         {/* /Logo */}
-        <a id="toggle_btn" href="" style={{display: pathname.includes('tasks') ?"none" :pathname.includes('compose') ? "none" :""}}>
-          <span className="bar-icon"><span />
+        <a
+          id="toggle_btn"
+          href=""
+          style={{
+            display: pathname.includes("tasks")
+              ? "none"
+              : pathname.includes("compose")
+              ? "none"
+              : "",
+          }}
+        >
+          <span className="bar-icon">
+            <span />
             <span />
             <span />
           </span>
@@ -36,7 +74,9 @@ class Header extends Component {
           <h3>OCTA</h3>
         </div>
         {/* /Header Title */}
-        <a id="mobile_btn" className="mobile_btn" href="#sidebar"><i className="fa fa-bars" /></a>
+        <a id="mobile_btn" className="mobile_btn" href="#sidebar">
+          <i className="fa fa-bars" />
+        </a>
         {/* Header Menu */}
         <ul className="nav user-menu">
           {/* Search */}
@@ -46,106 +86,193 @@ class Header extends Component {
                 <i className="fa fa-search" />
               </a>
               <form>
-                <input className="form-control" type="text" placeholder="Search here" />
-                <button className="btn" type="submit"><i className="fa fa-search" /></button>
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Search here"
+                />
+                <button className="btn" type="submit">
+                  <i className="fa fa-search" />
+                </button>
               </form>
             </div>
           </li>
           {/* /Search */}
           {/* Flag */}
           <li className="nav-item dropdown has-arrow flag-nav">
-            <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            <a
+              className="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+            >
               <img src={lnEnglish} alt="" height={20} /> <span>English</span>
             </a>
             <div className="dropdown-menu dropdown-menu-right">
-            <a href="" className="dropdown-item">
-                    <img src={lnEnglish} alt="" height={16} /> English
-                  </a>
-                  <a href="" className="dropdown-item">
-                    <img src={lnFrench} alt="" height={16} /> French
-                  </a>
-                  <a href="" className="dropdown-item">
-                    <img src={lnSpanish} alt="" height={16} /> Spanish
-                  </a>
-                  <a href="" className="dropdown-item">
-                    <img src={lnGerman} alt="" height={16} /> German
-                  </a>
+              <a href="" className="dropdown-item">
+                <img src={lnEnglish} alt="" height={16} /> English
+              </a>
+              <a href="" className="dropdown-item">
+                <img src={lnFrench} alt="" height={16} /> French
+              </a>
+              <a href="" className="dropdown-item">
+                <img src={lnSpanish} alt="" height={16} /> Spanish
+              </a>
+              <a href="" className="dropdown-item">
+                <img src={lnGerman} alt="" height={16} /> German
+              </a>
             </div>
           </li>
           {/* /Flag */}
           {/* Notifications */}
           <li className="nav-item dropdown">
-            <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i className="fa fa-bell-o" /> <span className="badge badge-pill">3</span>
+            <a
+              href="#"
+              className="dropdown-toggle nav-link"
+              data-toggle="dropdown"
+            >
+              <i className="fa fa-bell-o" />{" "}
+              <span className="badge badge-pill">3</span>
             </a>
             <div className="dropdown-menu notifications">
               <div className="topnav-dropdown-header">
                 <span className="notification-title">Notifications</span>
-                <a href="" className="clear-noti"> Clear All </a>
+                <a href="" className="clear-noti">
+                  {" "}
+                  Clear All{" "}
+                </a>
               </div>
               <div className="noti-content">
                 <ul className="notification-list">
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/app/administrator/activities"
+                    >
                       <div className="media">
                         <span className="avatar">
                           <img alt="" src={Avatar_02} />
                         </span>
                         <div className="media-body">
-                          <p className="noti-details"><span className="noti-title">John Doe</span> added new task <span className="noti-title">Patient appointment booking</span></p>
-                          <p className="noti-time"><span className="notification-time">4 mins ago</span></p>
+                          <p className="noti-details">
+                            <span className="noti-title">John Doe</span> added
+                            new task{" "}
+                            <span className="noti-title">
+                              Patient appointment booking
+                            </span>
+                          </p>
+                          <p className="noti-time">
+                            <span className="notification-time">
+                              4 mins ago
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/app/administrator/activities"
+                    >
                       <div className="media">
                         <span className="avatar">
                           <img alt="" src={Avatar_03} />
                         </span>
                         <div className="media-body">
-                          <p className="noti-details"><span className="noti-title">Tarah Shropshire</span> changed the task name <span className="noti-title">Appointment booking with payment gateway</span></p>
-                          <p className="noti-time"><span className="notification-time">6 mins ago</span></p>
+                          <p className="noti-details">
+                            <span className="noti-title">Tarah Shropshire</span>{" "}
+                            changed the task name{" "}
+                            <span className="noti-title">
+                              Appointment booking with payment gateway
+                            </span>
+                          </p>
+                          <p className="noti-time">
+                            <span className="notification-time">
+                              6 mins ago
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/app/administrator/activities"
+                    >
                       <div className="media">
                         <span className="avatar">
                           <img alt="" src={Avatar_06} />
                         </span>
                         <div className="media-body">
-                          <p className="noti-details"><span className="noti-title">Misty Tison</span> added <span className="noti-title">Domenic Houston</span> and <span className="noti-title">Claire Mapes</span> to project <span className="noti-title">Doctor available module</span></p>
-                          <p className="noti-time"><span className="notification-time">8 mins ago</span></p>
+                          <p className="noti-details">
+                            <span className="noti-title">Misty Tison</span>{" "}
+                            added{" "}
+                            <span className="noti-title">Domenic Houston</span>{" "}
+                            and <span className="noti-title">Claire Mapes</span>{" "}
+                            to project{" "}
+                            <span className="noti-title">
+                              Doctor available module
+                            </span>
+                          </p>
+                          <p className="noti-time">
+                            <span className="notification-time">
+                              8 mins ago
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/app/administrator/activities"
+                    >
                       <div className="media">
                         <span className="avatar">
                           <img alt="" src={Avatar_17} />
                         </span>
                         <div className="media-body">
-                          <p className="noti-details"><span className="noti-title">Rolland Webber</span> completed task <span className="noti-title">Patient and Doctor video conferencing</span></p>
-                          <p className="noti-time"><span className="notification-time">12 mins ago</span></p>
+                          <p className="noti-details">
+                            <span className="noti-title">Rolland Webber</span>{" "}
+                            completed task{" "}
+                            <span className="noti-title">
+                              Patient and Doctor video conferencing
+                            </span>
+                          </p>
+                          <p className="noti-time">
+                            <span className="notification-time">
+                              12 mins ago
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/app/administrator/activities"
+                    >
                       <div className="media">
                         <span className="avatar">
                           <img alt="" src={Avatar_13} />
                         </span>
                         <div className="media-body">
-                          <p className="noti-details"><span className="noti-title">Bernardo Galaviz</span> added new task <span className="noti-title">Private chat module</span></p>
-                          <p className="noti-time"><span className="notification-time">2 days ago</span></p>
+                          <p className="noti-details">
+                            <span className="noti-title">Bernardo Galaviz</span>{" "}
+                            added new task{" "}
+                            <span className="noti-title">
+                              Private chat module
+                            </span>
+                          </p>
+                          <p className="noti-time">
+                            <span className="notification-time">
+                              2 days ago
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </Link>
@@ -153,25 +280,41 @@ class Header extends Component {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-                <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">View all Notifications</Link>
+                <Link
+                  onClick={() => localStorage.setItem("minheight", "true")}
+                  to="/app/administrator/activities"
+                >
+                  View all Notifications
+                </Link>
               </div>
             </div>
           </li>
           {/* /Notifications */}
           {/* Message Notifications */}
           <li className="nav-item dropdown">
-            <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i className="fa fa-comment-o" /> <span className="badge badge-pill">8</span>
+            <a
+              href="#"
+              className="dropdown-toggle nav-link"
+              data-toggle="dropdown"
+            >
+              <i className="fa fa-comment-o" />{" "}
+              <span className="badge badge-pill">8</span>
             </a>
             <div className="dropdown-menu notifications">
               <div className="topnav-dropdown-header">
                 <span className="notification-title">Messages</span>
-                <a href="" className="clear-noti"> Clear All </a>
+                <a href="" className="clear-noti">
+                  {" "}
+                  Clear All{" "}
+                </a>
               </div>
               <div className="noti-content">
                 <ul className="notification-list">
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/conversation/chat"
+                    >
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
@@ -182,13 +325,18 @@ class Header extends Component {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                          <span className="message-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                          </span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/conversation/chat"
+                    >
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
@@ -199,13 +347,18 @@ class Header extends Component {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">6 Mar</span>
                           <div className="clearfix" />
-                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                          <span className="message-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                          </span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/conversation/chat"
+                    >
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
@@ -213,16 +366,24 @@ class Header extends Component {
                           </span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author"> Tarah Shropshire </span>
+                          <span className="message-author">
+                            {" "}
+                            Tarah Shropshire{" "}
+                          </span>
                           <span className="message-time">5 Mar</span>
                           <div className="clearfix" />
-                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                          <span className="message-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                          </span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/conversation/chat"
+                    >
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
@@ -233,13 +394,18 @@ class Header extends Component {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">3 Mar</span>
                           <div className="clearfix" />
-                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                          <span className="message-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                          </span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li className="notification-message">
-                    <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">
+                    <Link
+                      onClick={() => localStorage.setItem("minheight", "true")}
+                      to="/conversation/chat"
+                    >
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
@@ -247,10 +413,15 @@ class Header extends Component {
                           </span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author"> Catherine Manseau </span>
+                          <span className="message-author">
+                            {" "}
+                            Catherine Manseau{" "}
+                          </span>
                           <span className="message-time">27 Feb</span>
                           <div className="clearfix" />
-                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                          <span className="message-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                          </span>
                         </div>
                       </div>
                     </Link>
@@ -258,39 +429,71 @@ class Header extends Component {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-                <Link onClick={()=>localStorage.setItem("minheight","true")} to="/conversation/chat">View all Messages</Link>
+                <Link
+                  onClick={() => localStorage.setItem("minheight", "true")}
+                  to="/conversation/chat"
+                >
+                  View all Messages
+                </Link>
               </div>
             </div>
           </li>
           {/* /Message Notifications */}
           <li className="nav-item dropdown has-arrow main-drop">
-            <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-              <span className="user-img"><img src={agent.photo.secure_url} alt="" />
-                <span className="status online" /></span>
+            <a
+              href="#"
+              className="dropdown-toggle nav-link"
+              data-toggle="dropdown"
+            >
+              <span className="user-img">
+                <img src={agent.photo.secure_url} alt="" />
+                <span className="status online" />
+              </span>
               <span>{agent.firstName}</span>
             </a>
             <div className="dropdown-menu">
-              <Link className="dropdown-item" to="/app/profile/employee-profile">My Profile</Link>
-              <Link className="dropdown-item" to="/settings/companysetting">Settings</Link>
-              <Link className="dropdown-item" to="/login">Logout</Link>
+              <Link
+                className="dropdown-item"
+                to="/app/profile/employee-profile"
+              >
+                My Profile
+              </Link>
+              <Link className="dropdown-item" to="/settings/companysetting">
+                Settings
+              </Link>
+              <Link className="dropdown-item" to="/login">
+                Logout
+              </Link>
             </div>
           </li>
         </ul>
         {/* /Header Menu */}
         {/* Mobile Menu */}
         <div className="dropdown mobile-user-menu">
-          <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v" /></a>
+          <a
+            href="#"
+            className="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="fa fa-ellipsis-v" />
+          </a>
           <div className="dropdown-menu dropdown-menu-right">
-            <Link className="dropdown-item" to="/app/profile/employee-profile">My Profile</Link>
-            <Link className="dropdown-item" to="/settings/companysetting">Settings</Link>
-            <Link className="dropdown-item" to="/login">Logout</Link>
+            <Link className="dropdown-item" to="/app/profile/employee-profile">
+              My Profile
+            </Link>
+            <Link className="dropdown-item" to="/settings/companysetting">
+              Settings
+            </Link>
+            <Link className="dropdown-item" to="/login">
+              Logout
+            </Link>
           </div>
         </div>
         {/* /Mobile Menu */}
       </div>
-       
-      );
-   }
+    );
+  }
 }
 
 export default withRouter(Header);

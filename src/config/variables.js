@@ -1,1 +1,1 @@
-exports.SERVER_URL = "https://upgradely.link";
+exports.SERVER_URL = "https://octahealth.link";

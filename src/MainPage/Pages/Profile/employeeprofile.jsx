@@ -13,19 +13,36 @@ import {
 } from "../../../Entryfile/imagepath";
 import axios from "axios";
 import moment from "moment";
+import { SERVER_URL } from "../../../config/variables";
 
 const EmployeeProfile = () => {
   const location = useLocation();
-  const { patientID } = location.state;
+  const patientID = location.state ? location.state.patientID : null;
   const [patient, setPatient] = useState();
   const [loading, setLoading] = useState(true);
   useEffect(async () => {
+    if (!patientID) {
+      setPatient({
+        firstName: "Jhon",
+        lastName: "Doe",
+        email: "Jhondoe@gmail.com",
+        phone: "1234567889",
+        gender: "Male",
+        uhid: "12345",
+        createdAt: Date.now(),
+        age: 25,
+        address: "123 xyz street",
+      });
+      setLoading(false);
+      return;
+    }
     const patient = await axios.post(
-      "http://localhost:3333/api/v1/patient/findPatientByID",
+      `${SERVER_URL}/api/v1/patient/findPatient`,
       { patientID }
     );
-    console.log(patient.data.patient);
+    console.log(patient.data);
     setPatient(patient.data.patient);
+
     setLoading(false);
   }, [loading]);
   useEffect(() => {

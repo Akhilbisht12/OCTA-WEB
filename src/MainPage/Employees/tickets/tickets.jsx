@@ -426,13 +426,13 @@ const Tickets = () => {
                 <div className="card-body">
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <span className="d-block">New Tickets</span>
+                      <span className="d-block">Open Leads</span>
                     </div>
                     <div>
                       <span className="text-success">+10%</span>
                     </div>
                   </div>
-                  <h3 className="mb-3">112</h3>
+                  <h3 className="mb-3">542</h3>
                   <div className="progress mb-2" style={{ height: "5px" }}>
                     <div
                       className="progress-bar bg-primary"
@@ -449,13 +449,13 @@ const Tickets = () => {
                 <div className="card-body">
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <span className="d-block">Solved Tickets</span>
+                      <span className="d-block">Follow Up</span>
                     </div>
                     <div>
                       <span className="text-success">+12.5%</span>
                     </div>
                   </div>
-                  <h3 className="mb-3">70</h3>
+                  <h3 className="mb-3">250</h3>
                   <div className="progress mb-2" style={{ height: "5px" }}>
                     <div
                       className="progress-bar bg-primary"
@@ -472,13 +472,13 @@ const Tickets = () => {
                 <div className="card-body">
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <span className="d-block">Open Tickets</span>
+                      <span className="d-block">Closed Won</span>
                     </div>
                     <div>
                       <span className="text-danger">-2.8%</span>
                     </div>
                   </div>
-                  <h3 className="mb-3">100</h3>
+                  <h3 className="mb-3">1500</h3>
                   <div className="progress mb-2" style={{ height: "5px" }}>
                     <div
                       className="progress-bar bg-primary"
@@ -495,7 +495,7 @@ const Tickets = () => {
                 <div className="card-body">
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <span className="d-block">Pending Tickets</span>
+                      <span className="d-block">Closed Failed</span>
                     </div>
                     <div>
                       <span className="text-danger">-75%</span>
