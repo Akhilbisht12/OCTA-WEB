@@ -86,7 +86,9 @@ const Tickets = () => {
           patient: item.patientID.firstName + " " + item.patientID.lastName,
           image: Avatar_02,
           name: item.patientID.firstName + " " + item.patientID.lastName,
-          doctor: item.doctor ? item.doctor : "doctor",
+          doctor: item.estimate
+            ? item.estimate.doctor
+            : item.quickPrescription.doctor,
           leadid: item._id,
           ticketsubject: "Internet Issue",
           createddate: item.createdAt,
@@ -164,7 +166,7 @@ const Tickets = () => {
         <Link
           onClick={() => localStorage.setItem("minheight", "true")}
           to={{
-            pathname: "/app/employees/ticket-view",
+            pathname: "/app/employees/singleTicket",
             state: { text },
           }}
         >

@@ -149,7 +149,7 @@ const Services = () => {
                   </div>
                 </div>
                 <h4 className="project-title">
-                  <Link to="/app/services/service_view">CABG</Link>
+                  <Link to="/app/serviceView/">CABG</Link>
                 </h4>
                 <small className="block text-ellipsis m-b-15">
                   <span className="text-xs">1</span>{" "}
@@ -333,9 +333,11 @@ const Services = () => {
                   <span className="text-muted">leads completed</span>
                 </small>
                 <p className="text-muted">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. When an unknown printer took a galley of
-                  type and scrambled it...
+                  Microdiscectomy is a very common, if not the most common,
+                  surgery performed by spine surgeons. The operation consists of
+                  removing a portion of the intervertebral disc, the herniated
+                  or protruding portion that is compressing the traversing
+                  spinal nerve root.
                 </p>
                 {/* <div className="pro-deadline m-b-15">
                   <div className="sub-title">Deadline:</div>
@@ -507,9 +509,11 @@ const Services = () => {
                   <span className="text-muted">leads completed</span>
                 </small>
                 <p className="text-muted">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. When an unknown printer took a galley of
-                  type and scrambled it...
+                  A craniotomy is the surgical removal of part of the bone from
+                  the skull to expose the brain. Specialized tools are used to
+                  remove the section of bone called the bone flap. The bone flap
+                  is temporarily removed, then replaced after the brain surgery
+                  has been done.
                 </p>
                 {/* <div className="pro-deadline m-b-15">
                   <div className="sub-title">Deadline:</div>
@@ -681,9 +685,11 @@ const Services = () => {
                   <span className="text-muted">leads completed</span>
                 </small>
                 <p className="text-muted">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. When an unknown printer took a galley of
-                  type and scrambled it...
+                  Angioplasty is a procedure used to open blocked coronary
+                  arteries caused by coronary artery disease. It restores blood
+                  flow to the heart muscle without open-heart surgery.
+                  Angioplasty can be done in an emergency setting such as a
+                  heart attack.
                 </p>
                 {/* <div className="pro-deadline m-b-15">
                   <div className="sub-title">Deadline:</div>

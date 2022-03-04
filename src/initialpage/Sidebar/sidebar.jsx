@@ -106,7 +106,7 @@ const Sidebar = (props) => {
               }
             >
               <Link to="/app/employees/tickets">
-                <i className="la la-ticket" /> <span>Tickets</span>
+                <i className="la la-ticket" /> <span>Leads</span>
               </Link>
             </li>
             <li className="menu-title">

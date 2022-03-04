@@ -1,44 +1,89 @@
-
-import React , {useEffect} from 'react';
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from 'react-router-dom';
-import { Avatar_01,Avatar_02,Avatar_03,Avatar_04,Avatar_05,Avatar_11, Avatar_12,Avatar_09,
-    Avatar_10, Avatar_08,Avatar_13,Avatar_16 } from "../../../Entryfile/imagepath"
+import { Link } from "react-router-dom";
+import {
+  Avatar_01,
+  Avatar_02,
+  Avatar_03,
+  Avatar_04,
+  Avatar_05,
+  Avatar_11,
+  Avatar_12,
+  Avatar_09,
+  Avatar_10,
+  Avatar_08,
+  Avatar_13,
+  Avatar_16,
+} from "../../../Entryfile/imagepath";
+import axios from "axios";
+import { SERVER_URL } from "../../../config/variables";
 
 const AllEmployees = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    if ($(".select").length > 0) {
+      $(".select").select2({
+        minimumResultsForSearch: -1,
+        width: "100%",
+      });
+    }
+  });
 
-    useEffect( ()=>{
-      if($('.select').length > 0) {
-        $('.select').select2({
-          minimumResultsForSearch: -1,
-          width: '100%'
-        });
-      }
-    });  
+  useEffect(async () => {
+    try {
+      const patients = await axios.get(
+        `${SERVER_URL}/api/v1/patient/getAllPatients`
+      );
+      setData(patients.data.patients);
+      console.log(patients.data);
+    } catch (error) {
+      console.log(error);
+      alert("something went wrong fetching patients");
+    }
+  }, []);
 
-      return ( 
-      <div className="page-wrapper">
-        <Helmet>
-            <title>Employee - HRMS Admin Template</title>
-            <meta name="description" content="Login page"/>					
-        </Helmet>
+  return (
+    <div className="page-wrapper">
+      <Helmet>
+        <title>Patients - HRMS Admin Template</title>
+        <meta name="description" content="Login page" />
+      </Helmet>
       {/* Page Content */}
       <div className="content container-fluid">
         {/* Page Header */}
         <div className="page-header">
           <div className="row align-items-center">
             <div className="col">
-              <h3 className="page-title">Employee</h3>
+              <h3 className="page-title">Patients</h3>
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><Link to="/app/main/dashboard">Dashboard</Link></li>
-                <li className="breadcrumb-item active">Employee</li>
+                <li className="breadcrumb-item">
+                  <Link to="/app/main/dashboard">Dashboard</Link>
+                </li>
+                <li className="breadcrumb-item active">Patients</li>
               </ul>
             </div>
             <div className="col-auto float-right ml-auto">
-              <a href="#" className="btn add-btn" data-toggle="modal" data-target="#add_employee"><i className="fa fa-plus" /> Add Employee</a>
+              <a
+                href="#"
+                className="btn add-btn"
+                data-toggle="modal"
+                data-target="#add_employee"
+              >
+                <i className="fa fa-plus" /> Add Employee
+              </a>
               <div className="view-icons">
-                <Link to="/app/employee/allemployees" className="grid-view btn btn-link active"><i className="fa fa-th" /></Link>
-                <Link to="/app/employee/employees-list" className="list-view btn btn-link"><i className="fa fa-bars" /></Link>
+                <Link
+                  to="/app/employee/allemployees"
+                  className="grid-view btn btn-link active"
+                >
+                  <i className="fa fa-th" />
+                </Link>
+                <Link
+                  to="/app/employee/employees-list"
+                  className="list-view btn btn-link"
+                >
+                  <i className="fa fa-bars" />
+                </Link>
               </div>
             </div>
           </div>
@@ -46,21 +91,21 @@ const AllEmployees = () => {
         {/* /Page Header */}
         {/* Search Filter */}
         <div className="row filter-row">
-          <div className="col-sm-6 col-md-3">  
+          <div className="col-sm-6 col-md-3">
             <div className="form-group form-focus">
               <input type="text" className="form-control floating" />
               <label className="focus-label">Employee ID</label>
             </div>
           </div>
-          <div className="col-sm-6 col-md-3">  
+          <div className="col-sm-6 col-md-3">
             <div className="form-group form-focus">
               <input type="text" className="form-control floating" />
               <label className="focus-label">Employee Name</label>
             </div>
           </div>
-          <div className="col-sm-6 col-md-3"> 
+          <div className="col-sm-6 col-md-3">
             <div className="form-group form-focus select-focus">
-              <select className="select floating"> 
+              <select className="select floating">
                 <option>Select Designation</option>
                 <option>Web Developer</option>
                 <option>Web Designer</option>
@@ -70,204 +115,62 @@ const AllEmployees = () => {
               <label className="focus-label">Designation</label>
             </div>
           </div>
-          <div className="col-sm-6 col-md-3">  
-            <a href="#" className="btn btn-success btn-block"> Search </a>  
+          <div className="col-sm-6 col-md-3">
+            <a href="#" className="btn btn-success btn-block">
+              {" "}
+              Search{" "}
+            </a>
           </div>
         </div>
         {/* Search Filter */}
         <div className="row staff-grid-row">
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_02} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
+          {data.map((item) => {
+            return (
+              <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                <div className="profile-widget">
+                  <div className="profile-img">
+                    <Link to="/app/profile/employee-profile" className="avatar">
+                      <img src={Avatar_02} alt="" />
+                    </Link>
+                  </div>
+                  <div className="dropdown profile-action">
+                    <a
+                      href="#"
+                      className="action-icon dropdown-toggle"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i className="material-icons">more_vert</i>
+                    </a>
+                    <div className="dropdown-menu dropdown-menu-right">
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#edit_employee"
+                      >
+                        <i className="fa fa-pencil m-r-5" /> Edit
+                      </a>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#delete_employee"
+                      >
+                        <i className="fa fa-trash-o m-r-5" /> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <h4 className="user-name m-t-10 mb-0 text-ellipsis">
+                    <Link to="/app/profile/employee-profile">
+                      {item.firstName + " " + item.lastName}
+                    </Link>
+                  </h4>
+                  <div className="small text-muted">UHID : {item.uhid}</div>
                 </div>
               </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">John Doe</Link></h4>
-              <div className="small text-muted">Web Designer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_09} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Richard Miles</Link></h4>
-              <div className="small text-muted">Web Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_10} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">John Smith</Link></h4>
-              <div className="small text-muted">Android Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_05} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Mike Litorus</Link></h4>
-              <div className="small text-muted">IOS Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_11} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Wilmer Deluna</Link></h4>
-              <div className="small text-muted">Team Leader</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_12} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Jeffrey Warden</Link></h4>
-              <div className="small text-muted">Web Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_13} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Bernardo Galaviz</Link></h4>
-              <div className="small text-muted">Web Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_01} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Lesley Grauer</Link></h4>
-              <div className="small text-muted">Team Leader</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_16} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Jeffery Lalor</Link></h4>
-              <div className="small text-muted">Team Leader</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_04} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Loren Gatlin</Link></h4>
-              <div className="small text-muted">Android Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_03} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Tarah Shropshire</Link></h4>
-              <div className="small text-muted">Android Developer</div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/employee-profile" className="avatar"><img src={Avatar_08} alt="" /></Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i className="fa fa-pencil m-r-5" /> Edit</a>
-                  <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i className="fa fa-trash-o m-r-5" /> Delete</a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis"><Link to="/app/profile/employee-profile">Catherine Manseau</Link></h4>
-              <div className="small text-muted">Android Developer</div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
       {/* /Page Content */}
@@ -277,7 +180,12 @@ const AllEmployees = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Add Employee</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">×</span>
               </button>
             </div>
@@ -286,7 +194,9 @@ const AllEmployees = () => {
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">First Name <span className="text-danger">*</span></label>
+                      <label className="col-form-label">
+                        First Name <span className="text-danger">*</span>
+                      </label>
                       <input className="form-control" type="text" />
                     </div>
                   </div>
@@ -298,13 +208,17 @@ const AllEmployees = () => {
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Username <span className="text-danger">*</span></label>
+                      <label className="col-form-label">
+                        Username <span className="text-danger">*</span>
+                      </label>
                       <input className="form-control" type="text" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Email <span className="text-danger">*</span></label>
+                      <label className="col-form-label">
+                        Email <span className="text-danger">*</span>
+                      </label>
                       <input className="form-control" type="email" />
                     </div>
                   </div>
@@ -320,16 +234,25 @@ const AllEmployees = () => {
                       <input className="form-control" type="password" />
                     </div>
                   </div>
-                  <div className="col-sm-6">  
+                  <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Employee ID <span className="text-danger">*</span></label>
+                      <label className="col-form-label">
+                        Employee ID <span className="text-danger">*</span>
+                      </label>
                       <input type="text" className="form-control" />
                     </div>
                   </div>
-                  <div className="col-sm-6">  
+                  <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Joining Date <span className="text-danger">*</span></label>
-                      <div><input className="form-control datetimepicker" type="date" /></div>
+                      <label className="col-form-label">
+                        Joining Date <span className="text-danger">*</span>
+                      </label>
+                      <div>
+                        <input
+                          className="form-control datetimepicker"
+                          type="date"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="col-sm-6">
@@ -349,7 +272,9 @@ const AllEmployees = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Department <span className="text-danger">*</span></label>
+                      <label>
+                        Department <span className="text-danger">*</span>
+                      </label>
                       <select className="select">
                         <option>Select Department</option>
                         <option>Web Development</option>
@@ -360,7 +285,9 @@ const AllEmployees = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Designation <span className="text-danger">*</span></label>
+                      <label>
+                        Designation <span className="text-danger">*</span>
+                      </label>
                       <select className="select">
                         <option>Select Designation</option>
                         <option>Web Designer</option>
@@ -566,11 +493,19 @@ const AllEmployees = () => {
       {/* /Add Employee Modal */}
       {/* Edit Employee Modal */}
       <div id="edit_employee" className="modal custom-modal fade" role="dialog">
-        <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div
+          className="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Edit Employee</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">×</span>
               </button>
             </div>
@@ -579,56 +514,104 @@ const AllEmployees = () => {
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">First Name <span className="text-danger">*</span></label>
-                      <input className="form-control" defaultValue="John" type="text" />
+                      <label className="col-form-label">
+                        First Name <span className="text-danger">*</span>
+                      </label>
+                      <input
+                        className="form-control"
+                        defaultValue="John"
+                        type="text"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
                       <label className="col-form-label">Last Name</label>
-                      <input className="form-control" defaultValue="Doe" type="text" />
+                      <input
+                        className="form-control"
+                        defaultValue="Doe"
+                        type="text"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Username <span className="text-danger">*</span></label>
-                      <input className="form-control" defaultValue="johndoe" type="text" />
+                      <label className="col-form-label">
+                        Username <span className="text-danger">*</span>
+                      </label>
+                      <input
+                        className="form-control"
+                        defaultValue="johndoe"
+                        type="text"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Email <span className="text-danger">*</span></label>
-                      <input className="form-control" defaultValue="johndoe@example.com" type="email" />
+                      <label className="col-form-label">
+                        Email <span className="text-danger">*</span>
+                      </label>
+                      <input
+                        className="form-control"
+                        defaultValue="johndoe@example.com"
+                        type="email"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
                       <label className="col-form-label">Password</label>
-                      <input className="form-control" defaultValue="johndoe" type="password" />
+                      <input
+                        className="form-control"
+                        defaultValue="johndoe"
+                        type="password"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
                       <label className="col-form-label">Confirm Password</label>
-                      <input className="form-control" defaultValue="johndoe" type="password" />
+                      <input
+                        className="form-control"
+                        defaultValue="johndoe"
+                        type="password"
+                      />
                     </div>
                   </div>
-                  <div className="col-sm-6">  
+                  <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Employee ID <span className="text-danger">*</span></label>
-                      <input type="text" defaultValue="FT-0001" readOnly className="form-control floating" />
+                      <label className="col-form-label">
+                        Employee ID <span className="text-danger">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        defaultValue="FT-0001"
+                        readOnly
+                        className="form-control floating"
+                      />
                     </div>
                   </div>
-                  <div className="col-sm-6">  
+                  <div className="col-sm-6">
                     <div className="form-group">
-                      <label className="col-form-label">Joining Date <span className="text-danger">*</span></label>
-                      <div><input className="form-control datetimepicker" type="date" /></div>
+                      <label className="col-form-label">
+                        Joining Date <span className="text-danger">*</span>
+                      </label>
+                      <div>
+                        <input
+                          className="form-control datetimepicker"
+                          type="date"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
                       <label className="col-form-label">Phone </label>
-                      <input className="form-control" defaultValue={9876543210} type="text" />
+                      <input
+                        className="form-control"
+                        defaultValue={9876543210}
+                        type="text"
+                      />
                     </div>
                   </div>
                   <div className="col-sm-6">
@@ -643,7 +626,9 @@ const AllEmployees = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Department <span className="text-danger">*</span></label>
+                      <label>
+                        Department <span className="text-danger">*</span>
+                      </label>
                       <select className="select">
                         <option>Select Department</option>
                         <option>Web Development</option>
@@ -654,7 +639,9 @@ const AllEmployees = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Designation <span className="text-danger">*</span></label>
+                      <label>
+                        Designation <span className="text-danger">*</span>
+                      </label>
                       <select className="select">
                         <option>Select Designation</option>
                         <option>Web Designer</option>
@@ -859,7 +846,11 @@ const AllEmployees = () => {
       </div>
       {/* /Edit Employee Modal */}
       {/* Delete Employee Modal */}
-      <div className="modal custom-modal fade" id="delete_employee" role="dialog">
+      <div
+        className="modal custom-modal fade"
+        id="delete_employee"
+        role="dialog"
+      >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
@@ -870,10 +861,18 @@ const AllEmployees = () => {
               <div className="modal-btn delete-action">
                 <div className="row">
                   <div className="col-6">
-                    <a href="" className="btn btn-primary continue-btn">Delete</a>
+                    <a href="" className="btn btn-primary continue-btn">
+                      Delete
+                    </a>
                   </div>
                   <div className="col-6">
-                    <a href="" data-dismiss="modal" className="btn btn-primary cancel-btn">Cancel</a>
+                    <a
+                      href=""
+                      data-dismiss="modal"
+                      className="btn btn-primary cancel-btn"
+                    >
+                      Cancel
+                    </a>
                   </div>
                 </div>
               </div>
@@ -883,7 +882,7 @@ const AllEmployees = () => {
       </div>
       {/* /Delete Employee Modal */}
     </div>
-        );
-  }
+  );
+};
 
 export default AllEmployees;

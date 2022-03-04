@@ -67,7 +67,7 @@ const ShowExpandedPatient = ({ record, render, setrender, changeState }) => {
           <div className="text-info" onClick={() => setPrevEst(true)}>
             Notes
           </div>
-          <div>{record.data.notes.length === 0 ? "Nothing here.." : ""}</div>
+          <div>{record.data.notes.length === 0 ? "" : ""}</div>
           <div>
             {record.data.notes
               .slice(record.data.notes.length - 2, record.data.notes.length)

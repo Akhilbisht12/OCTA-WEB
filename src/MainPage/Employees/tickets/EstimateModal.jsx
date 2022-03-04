@@ -55,12 +55,10 @@ const EstimateModal = ({
                 }}
                 style={{ width: "80%" }}
               >
-                <option label="Dr. Jhon Doe" value="Dr. Jhon Doe" />
-                <option label="Dr. Karl Doe" value="Dr. Karl Doe" />
-                <option label="Dr. Liam Doe" value="Dr. Liam Doe" />
-                <option label="Dr. Nat Doe" value="Dr. Nat Doe" />
-                <option label="Dr. Mona Doe" value="Dr. Mona Doe" />
-                <option label="Dr. Oslo Doe" value="Dr. Oslo Doe" />
+                <option label="Dr. Naveen Jain" value="Dr. Naveen Jain" />
+                <option label="Dr. Kanti Jindal" value="Dr. Kanti Jindal" />
+                <option label="Dr. Seema Aggarwal" value="Dr. Seema Aggarwal" />
+                <option label="Dr. Ramesh Talwas" value="Dr. Ramesh Talwas" />
               </select>
             </div>
           </div>

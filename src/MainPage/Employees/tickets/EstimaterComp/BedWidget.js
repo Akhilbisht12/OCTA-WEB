@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { BedFeeMaster } from "../../../../config/BedFee";
+import { ICUFee } from "../../../../config/ICUFee";
 import {
   addIcuBed,
   addIcuStay,
@@ -84,7 +85,7 @@ const BedWidget = ({
                 addIcuBed({ icuBed: e.target.value });
               }}
             >
-              {BedFeeMaster.map((item) => {
+              {ICUFee.map((item) => {
                 return (
                   <option key={item.Billing_Code} value={item.Billing_Code}>
                     {item.Bed_Category}

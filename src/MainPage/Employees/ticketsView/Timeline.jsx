@@ -91,7 +91,7 @@ const Timeline = ({ record }) => {
                     <div className="experience-content">
                       <div className="timeline-content">
                         <a href="/" className="name">
-                          First Follow up Captured
+                          First Follow up
                         </a>
                         <span className="time">
                           {line.fone.value
@@ -124,7 +124,7 @@ const Timeline = ({ record }) => {
                     <div className="experience-content">
                       <div className="timeline-content">
                         <a href="/" className="name">
-                          Second Follow Up Captured
+                          Second Follow Up
                         </a>
                         <span className="time">
                           {line.ftwo.value
@@ -145,7 +145,7 @@ const Timeline = ({ record }) => {
                     <div className="experience-content">
                       <div className="timeline-content">
                         <a href="/" className="name">
-                          Third Follow Up Captured
+                          Third Follow Up
                         </a>
                         <span className="time">
                           {line.fthree.value
@@ -168,7 +168,7 @@ const Timeline = ({ record }) => {
                     <div className="experience-content">
                       <div className="timeline-content">
                         <a href="/" className="name">
-                          Fourth Follow Up Captured
+                          Fourth Follow Up
                         </a>
                         <span className="time">
                           {line.ffour.value

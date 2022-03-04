@@ -25,6 +25,7 @@ import Employees from "../MainPage/Employees";
 import Projects from "../MainPage/Employees/Projects";
 import Employee from "../MainPage/Employees/Employees";
 import Services from "../MainPage/Employees/services/services";
+import ServiceView from "../MainPage/Employees/services/ServiceView";
 
 export default [
   {
@@ -50,6 +51,10 @@ export default [
   {
     path: "services",
     component: Services,
+  },
+  {
+    path: "serviceView",
+    component: ServiceView,
   },
   {
     path: "ui-interface",

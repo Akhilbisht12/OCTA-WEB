@@ -7,18 +7,19 @@ const TicketActions = ({ show, setShow, action, session }) => {
   const engagementMessage = [
     {
       id: 0,
-      message:
-        "Engagement message one Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, nunc a aliquam viverra, arcu elit sagittis dolor, in blandit ex arcu scelerisque nibh. Fusce tortor lectus, suscipit ac faucibus quis, rutrum a enim. Nullam at posuere libero, eget egestas nisl. Quisque sed mattis dui, et dapibus leo. Sed porta mauris tellus, et aliquet elit viverra egestas. Curabitur posuere nisl non tortor aliquet, vestibulum eleifend sapien porta. Pellentesque congue leo molestie enim auctor, sed facilisis eros blandit. Sed eget lectus ut nibh accumsan fringilla. Cras et consequat dolor. Mauris eu egestas quam. Nunc ut feugiat orci, vestibulum luctus enim. Morbi lacinia porttitor metus, ac suscipit nibh ultrices eu. Suspendisse potenti. Aliquam erat volutpat.",
+      message: "Template one",
     },
     {
       id: 1,
-      message:
-        "Engagement message two Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, nunc a aliquam viverra, arcu elit sagittis dolor, in blandit ex arcu scelerisque nibh. Fusce tortor lectus, suscipit ac faucibus quis, rutrum a enim. Nullam at posuere libero, eget egestas nisl. Quisque sed mattis dui, et dapibus leo. Sed porta mauris tellus, et aliquet elit viverra egestas. Curabitur posuere nisl non tortor aliquet, vestibulum eleifend sapien porta. Pellentesque congue leo molestie enim auctor, sed facilisis eros blandit. Sed eget lectus ut nibh accumsan fringilla. Cras et consequat dolor. Mauris eu egestas quam. Nunc ut feugiat orci, vestibulum luctus enim. Morbi lacinia porttitor metus, ac suscipit nibh ultrices eu. Suspendisse potenti. Aliquam erat volutpat.",
+      message: "Template Two",
     },
     {
       id: 2,
-      message:
-        "Engagement message three Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, nunc a aliquam viverra, arcu elit sagittis dolor, in blandit ex arcu scelerisque nibh. Fusce tortor lectus, suscipit ac faucibus quis, rutrum a enim. Nullam at posuere libero, eget egestas nisl. Quisque sed mattis dui, et dapibus leo. Sed porta mauris tellus, et aliquet elit viverra egestas. Curabitur posuere nisl non tortor aliquet, vestibulum eleifend sapien porta. Pellentesque congue leo molestie enim auctor, sed facilisis eros blandit. Sed eget lectus ut nibh accumsan fringilla. Cras et consequat dolor. Mauris eu egestas quam. Nunc ut feugiat orci, vestibulum luctus enim. Morbi lacinia porttitor metus, ac suscipit nibh ultrices eu. Suspendisse potenti. Aliquam erat volutpat.",
+      message: "Template Three",
+    },
+    {
+      id: 3,
+      message: "",
     },
   ];
   const [message, setMessage] = useState("");
@@ -114,9 +115,10 @@ const TicketActions = ({ show, setShow, action, session }) => {
                       setMessage(engagementMessage[e.target.value].message);
                     }}
                   >
-                    <option value={0}>Engagement Message One</option>
-                    <option value={1}>Engagement Message two</option>
-                    <option value={2}>Engagement Message three</option>
+                    <option value={0}>Template One</option>
+                    <option value={1}>Template Two</option>
+                    <option value={2}>Template Three</option>
+                    <option value={3}>Custom</option>
                   </select>
                 </div>
               </div>

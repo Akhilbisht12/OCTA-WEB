@@ -12,8 +12,12 @@ import UnitHead from "./UnitHead";
 
 const DashboardRoute = ({ match }) => (
   <Switch>
-    <Redirect exact from={`${match.url}/`} to={`${match.url}/dashboard`} />
-    <Route path={`${match.url}/dashboard`} component={Admindashboard} />
+    <Redirect
+      exact
+      from={`${match.url}/`}
+      to={`${match.url}/unit-head-dashboard`}
+    />
+    <Route path={`${match.url}/dashboard`} component={UnitHead} />
     <Route
       path={`${match.url}/employee-dashboard`}
       component={Employeedashboard}

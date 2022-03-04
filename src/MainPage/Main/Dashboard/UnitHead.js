@@ -104,7 +104,7 @@ const UnitHead = () => {
           </div>
         </div>
         {/* /Page Header */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-6 col-sm-6 col-lg-6 col-xl-3">
             <div className="card dash-widget">
               <div className="card-body">
@@ -157,7 +157,7 @@ const UnitHead = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-md-12">
             <div className="row">
