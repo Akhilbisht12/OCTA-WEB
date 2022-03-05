@@ -11,7 +11,7 @@ const Package = ({ item, index, advice, addPackage, deletePackage }) => {
 
   const handleSearchPres = async (div) => {
     const result = await PackageList.filter((str) => {
-      return str.Service_Name.includes(div.toLowerCase());
+      return str.Service_Name.toLowerCase().includes(div.toLowerCase());
     });
     setPrescription(result.slice(0, 100));
   };
@@ -59,7 +59,7 @@ const Package = ({ item, index, advice, addPackage, deletePackage }) => {
   return (
     <div>
       <div style={{ width: "80%" }}>
-        <div style={{ display: item.Service_Name ? "none" : "flex" }}>
+        <div style={{ display: item.Service_Name ? "none" : "block" }}>
           <input
             placeholder="find packages"
             onChange={(e) => handleSearchPres(e.target.value)}

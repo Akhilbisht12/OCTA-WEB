@@ -12,7 +12,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -27,7 +27,7 @@ exports.PackageList = [
     Twin_Sharing: 24000,
     Single_Room: 27000,
     Deluxe_Room: 29000,
-    Suite_Room: 32000
+    Suite_Room: 32000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -42,7 +42,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -57,7 +57,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -72,7 +72,7 @@ exports.PackageList = [
     Twin_Sharing: 97000,
     Single_Room: 110000,
     Deluxe_Room: 119000,
-    Suite_Room: 132000
+    Suite_Room: 132000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -87,7 +87,7 @@ exports.PackageList = [
     Twin_Sharing: 114000,
     Single_Room: 129000,
     Deluxe_Room: 140000,
-    Suite_Room: 155000
+    Suite_Room: 155000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -102,7 +102,7 @@ exports.PackageList = [
     Twin_Sharing: 36000,
     Single_Room: 40000,
     Deluxe_Room: 44000,
-    Suite_Room: 48000
+    Suite_Room: 48000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -117,7 +117,7 @@ exports.PackageList = [
     Twin_Sharing: 108000,
     Single_Room: 123000,
     Deluxe_Room: 133000,
-    Suite_Room: 147000
+    Suite_Room: 147000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -132,7 +132,7 @@ exports.PackageList = [
     Twin_Sharing: 123000,
     Single_Room: 139000,
     Deluxe_Room: 150000,
-    Suite_Room: 167000
+    Suite_Room: 167000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -147,7 +147,7 @@ exports.PackageList = [
     Twin_Sharing: 65000,
     Single_Room: 74000,
     Deluxe_Room: 80000,
-    Suite_Room: 89000
+    Suite_Room: 89000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -162,7 +162,7 @@ exports.PackageList = [
     Twin_Sharing: 114000,
     Single_Room: 129000,
     Deluxe_Room: 140000,
-    Suite_Room: 155000
+    Suite_Room: 155000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -177,7 +177,7 @@ exports.PackageList = [
     Twin_Sharing: 17000,
     Single_Room: 19000,
     Deluxe_Room: 21000,
-    Suite_Room: 23000
+    Suite_Room: 23000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -192,7 +192,7 @@ exports.PackageList = [
     Twin_Sharing: 106000,
     Single_Room: 120000,
     Deluxe_Room: 130000,
-    Suite_Room: 144000
+    Suite_Room: 144000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -207,7 +207,7 @@ exports.PackageList = [
     Twin_Sharing: 146000,
     Single_Room: 165000,
     Deluxe_Room: 179000,
-    Suite_Room: 198000
+    Suite_Room: 198000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -222,7 +222,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -237,7 +237,7 @@ exports.PackageList = [
     Twin_Sharing: 65000,
     Single_Room: 74000,
     Deluxe_Room: 80000,
-    Suite_Room: 89000
+    Suite_Room: 89000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -252,7 +252,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 2695000,
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -267,7 +267,7 @@ exports.PackageList = [
     Twin_Sharing: 92000,
     Single_Room: 104000,
     Deluxe_Room: 113000,
-    Suite_Room: 125000
+    Suite_Room: 125000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -282,7 +282,7 @@ exports.PackageList = [
     Twin_Sharing: 109000,
     Single_Room: 124000,
     Deluxe_Room: 134000,
-    Suite_Room: 149000
+    Suite_Room: 149000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -297,7 +297,7 @@ exports.PackageList = [
     Twin_Sharing: 106000,
     Single_Room: 120000,
     Deluxe_Room: 130000,
-    Suite_Room: 144000
+    Suite_Room: 144000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -312,7 +312,7 @@ exports.PackageList = [
     Twin_Sharing: 74000,
     Single_Room: 84000,
     Deluxe_Room: 91000,
-    Suite_Room: 101000
+    Suite_Room: 101000,
   },
   {
     Department_Name: "CARDIOLOGY",
@@ -327,7 +327,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "CTVS",
@@ -342,7 +342,7 @@ exports.PackageList = [
     Twin_Sharing: 225000,
     Single_Room: 255000,
     Deluxe_Room: 276000,
-    Suite_Room: 306000
+    Suite_Room: 306000,
   },
   {
     Department_Name: "CTVS",
@@ -357,7 +357,7 @@ exports.PackageList = [
     Twin_Sharing: 291000,
     Single_Room: 330000,
     Deluxe_Room: 357000,
-    Suite_Room: 396000
+    Suite_Room: 396000,
   },
   {
     Department_Name: "CTVS",
@@ -372,7 +372,7 @@ exports.PackageList = [
     Twin_Sharing: 306000,
     Single_Room: 348000,
     Deluxe_Room: 376000,
-    Suite_Room: 417000
+    Suite_Room: 417000,
   },
   {
     Department_Name: "CTVS",
@@ -387,7 +387,7 @@ exports.PackageList = [
     Twin_Sharing: 237000,
     Single_Room: 269000,
     Deluxe_Room: 291000,
-    Suite_Room: 323000
+    Suite_Room: 323000,
   },
   {
     Department_Name: "CTVS",
@@ -402,7 +402,7 @@ exports.PackageList = [
     Twin_Sharing: 279000,
     Single_Room: 317000,
     Deluxe_Room: 342000,
-    Suite_Room: 380000
+    Suite_Room: 380000,
   },
   {
     Department_Name: "CTVS",
@@ -417,7 +417,7 @@ exports.PackageList = [
     Twin_Sharing: 237000,
     Single_Room: 269000,
     Deluxe_Room: 291000,
-    Suite_Room: 323000
+    Suite_Room: 323000,
   },
   {
     Department_Name: "CTVS",
@@ -432,7 +432,7 @@ exports.PackageList = [
     Twin_Sharing: 168000,
     Single_Room: 190000,
     Deluxe_Room: 206000,
-    Suite_Room: 228000
+    Suite_Room: 228000,
   },
   {
     Department_Name: "CTVS",
@@ -447,7 +447,7 @@ exports.PackageList = [
     Twin_Sharing: 247000,
     Single_Room: 280000,
     Deluxe_Room: 303000,
-    Suite_Room: 336000
+    Suite_Room: 336000,
   },
   {
     Department_Name: "CTVS",
@@ -462,7 +462,7 @@ exports.PackageList = [
     Twin_Sharing: 237000,
     Single_Room: 269000,
     Deluxe_Room: 291000,
-    Suite_Room: 323000
+    Suite_Room: 323000,
   },
   {
     Department_Name: "CTVS",
@@ -477,7 +477,7 @@ exports.PackageList = [
     Twin_Sharing: 297000,
     Single_Room: 338000,
     Deluxe_Room: 365000,
-    Suite_Room: 405000
+    Suite_Room: 405000,
   },
   {
     Department_Name: "CTVS",
@@ -492,7 +492,7 @@ exports.PackageList = [
     Twin_Sharing: 262000,
     Single_Room: 298000,
     Deluxe_Room: 322000,
-    Suite_Room: 357000
+    Suite_Room: 357000,
   },
   {
     Department_Name: "CTVS",
@@ -507,7 +507,7 @@ exports.PackageList = [
     Twin_Sharing: 138000,
     Single_Room: 157000,
     Deluxe_Room: 169000,
-    Suite_Room: 188000
+    Suite_Room: 188000,
   },
   {
     Department_Name: "CTVS",
@@ -522,7 +522,7 @@ exports.PackageList = [
     Twin_Sharing: 153000,
     Single_Room: 174000,
     Deluxe_Room: 188000,
-    Suite_Room: 209000
+    Suite_Room: 209000,
   },
   {
     Department_Name: "CTVS",
@@ -537,7 +537,7 @@ exports.PackageList = [
     Twin_Sharing: 153000,
     Single_Room: 174000,
     Deluxe_Room: 188000,
-    Suite_Room: 209000
+    Suite_Room: 209000,
   },
   {
     Department_Name: "CTVS",
@@ -552,7 +552,7 @@ exports.PackageList = [
     Twin_Sharing: 109000,
     Single_Room: 124000,
     Deluxe_Room: 134000,
-    Suite_Room: 149000
+    Suite_Room: 149000,
   },
   {
     Department_Name: "CTVS",
@@ -567,7 +567,7 @@ exports.PackageList = [
     Twin_Sharing: 277000,
     Single_Room: 314000,
     Deluxe_Room: 339000,
-    Suite_Room: 377000
+    Suite_Room: 377000,
   },
   {
     Department_Name: "CTVS",
@@ -582,7 +582,7 @@ exports.PackageList = [
     Twin_Sharing: 262000,
     Single_Room: 298000,
     Deluxe_Room: 322000,
-    Suite_Room: 357000
+    Suite_Room: 357000,
   },
   {
     Department_Name: "CTVS",
@@ -597,7 +597,7 @@ exports.PackageList = [
     Twin_Sharing: 291000,
     Single_Room: 330000,
     Deluxe_Room: 357000,
-    Suite_Room: 396000
+    Suite_Room: 396000,
   },
   {
     Department_Name: "CTVS",
@@ -612,7 +612,7 @@ exports.PackageList = [
     Twin_Sharing: 306000,
     Single_Room: 348000,
     Deluxe_Room: 376000,
-    Suite_Room: 417000
+    Suite_Room: 417000,
   },
   {
     Department_Name: "CTVS",
@@ -627,7 +627,7 @@ exports.PackageList = [
     Twin_Sharing: 335000,
     Single_Room: 380000,
     Deluxe_Room: 411000,
-    Suite_Room: 456000
+    Suite_Room: 456000,
   },
   {
     Department_Name: "CTVS",
@@ -642,7 +642,7 @@ exports.PackageList = [
     Twin_Sharing: 335000,
     Single_Room: 380000,
     Deluxe_Room: 411000,
-    Suite_Room: 456000
+    Suite_Room: 456000,
   },
   {
     Department_Name: "CTVS",
@@ -657,7 +657,7 @@ exports.PackageList = [
     Twin_Sharing: 291000,
     Single_Room: 330000,
     Deluxe_Room: 357000,
-    Suite_Room: 396000
+    Suite_Room: 396000,
   },
   {
     Department_Name: "CTVS",
@@ -672,7 +672,7 @@ exports.PackageList = [
     Twin_Sharing: 291000,
     Single_Room: 330000,
     Deluxe_Room: 357000,
-    Suite_Room: 396000
+    Suite_Room: 396000,
   },
   {
     Department_Name: "CTVS",
@@ -687,7 +687,7 @@ exports.PackageList = [
     Twin_Sharing: 306000,
     Single_Room: 348000,
     Deluxe_Room: 376000,
-    Suite_Room: 417000
+    Suite_Room: 417000,
   },
   {
     Department_Name: "CTVS",
@@ -702,7 +702,7 @@ exports.PackageList = [
     Twin_Sharing: 335000,
     Single_Room: 380000,
     Deluxe_Room: 411000,
-    Suite_Room: 456000
+    Suite_Room: 456000,
   },
   {
     Department_Name: "CTVS",
@@ -717,7 +717,7 @@ exports.PackageList = [
     Twin_Sharing: 247000,
     Single_Room: 280000,
     Deluxe_Room: 303000,
-    Suite_Room: 336000
+    Suite_Room: 336000,
   },
   {
     Department_Name: "CTVS",
@@ -732,7 +732,7 @@ exports.PackageList = [
     Twin_Sharing: 599000,
     Single_Room: 680000,
     Deluxe_Room: 735000,
-    Suite_Room: 816000
+    Suite_Room: 816000,
   },
   {
     Department_Name: "CTVS",
@@ -740,14 +740,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 12556,
     Ref_Service_Code: "CT1029",
-    Service_Name: "EXTRACORPOREAL MEMBRANCE OXYGENATION (ECMO SUBSEQUENT WEEKS)",
+    Service_Name:
+      "EXTRACORPOREAL MEMBRANCE OXYGENATION (ECMO SUBSEQUENT WEEKS)",
     OPD: 278000,
     IPD: "",
     Four_Sharing: 278000,
     Twin_Sharing: 306000,
     Single_Room: 348000,
     Deluxe_Room: 376000,
-    Suite_Room: 417000
+    Suite_Room: 417000,
   },
   {
     Department_Name: "CTVS",
@@ -762,7 +763,7 @@ exports.PackageList = [
     Twin_Sharing: 379000,
     Single_Room: 430000,
     Deluxe_Room: 465000,
-    Suite_Room: 516000
+    Suite_Room: 516000,
   },
   {
     Department_Name: "CTVS",
@@ -777,7 +778,7 @@ exports.PackageList = [
     Twin_Sharing: 255000,
     Single_Room: 289000,
     Deluxe_Room: 312000,
-    Suite_Room: 347000
+    Suite_Room: 347000,
   },
   {
     Department_Name: "CTVS",
@@ -792,7 +793,7 @@ exports.PackageList = [
     Twin_Sharing: 205000,
     Single_Room: 233000,
     Deluxe_Room: 252000,
-    Suite_Room: 279000
+    Suite_Room: 279000,
   },
   {
     Department_Name: "DIALYSIS",
@@ -807,7 +808,7 @@ exports.PackageList = [
     Twin_Sharing: 54000,
     Single_Room: 62000,
     Deluxe_Room: 67000,
-    Suite_Room: 74000
+    Suite_Room: 74000,
   },
   {
     Department_Name: "GYNAECOLOGY",
@@ -822,7 +823,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "INTERVENTIONAL RADIOLOGY",
@@ -837,7 +838,7 @@ exports.PackageList = [
     Twin_Sharing: 110000,
     Single_Room: 125000,
     Deluxe_Room: 135000,
-    Suite_Room: 150000
+    Suite_Room: 150000,
   },
   {
     Department_Name: "INTERVENTIONAL RADIOLOGY",
@@ -852,7 +853,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "INTERVENTIONAL RADIOLOGY",
@@ -867,7 +868,7 @@ exports.PackageList = [
     Twin_Sharing: 29000,
     Single_Room: 33000,
     Deluxe_Room: 36000,
-    Suite_Room: 39000
+    Suite_Room: 39000,
   },
   {
     Department_Name: "INTERVENTIONAL RADIOLOGY",
@@ -882,7 +883,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "OBSTETRICS",
@@ -897,7 +898,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 90000,
     Deluxe_Room: 120000,
-    Suite_Room: 150000
+    Suite_Room: 150000,
   },
   {
     Department_Name: "OBSTETRICS",
@@ -912,7 +913,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 90000,
     Deluxe_Room: 120000,
-    Suite_Room: 150000
+    Suite_Room: 150000,
   },
   {
     Department_Name: "OBSTETRICS",
@@ -927,7 +928,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -942,7 +943,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -957,7 +958,7 @@ exports.PackageList = [
     Twin_Sharing: 107000,
     Single_Room: 122000,
     Deluxe_Room: 131000,
-    Suite_Room: 146000
+    Suite_Room: 146000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -972,7 +973,7 @@ exports.PackageList = [
     Twin_Sharing: 28000,
     Single_Room: 32000,
     Deluxe_Room: 34000,
-    Suite_Room: 38000
+    Suite_Room: 38000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -987,7 +988,7 @@ exports.PackageList = [
     Twin_Sharing: 28000,
     Single_Room: 32000,
     Deluxe_Room: 34000,
-    Suite_Room: 38000
+    Suite_Room: 38000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1002,7 +1003,7 @@ exports.PackageList = [
     Twin_Sharing: 22000,
     Single_Room: 25000,
     Deluxe_Room: 27000,
-    Suite_Room: 30000
+    Suite_Room: 30000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1017,7 +1018,7 @@ exports.PackageList = [
     Twin_Sharing: 61000,
     Single_Room: 69000,
     Deluxe_Room: 75000,
-    Suite_Room: 83000
+    Suite_Room: 83000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1032,7 +1033,7 @@ exports.PackageList = [
     Twin_Sharing: 127000,
     Single_Room: 144000,
     Deluxe_Room: 156000,
-    Suite_Room: 173000
+    Suite_Room: 173000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1047,7 +1048,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1062,7 +1063,7 @@ exports.PackageList = [
     Twin_Sharing: 15000,
     Single_Room: 17000,
     Deluxe_Room: 18000,
-    Suite_Room: 20000
+    Suite_Room: 20000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1077,7 +1078,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1092,7 +1093,7 @@ exports.PackageList = [
     Twin_Sharing: 28000,
     Single_Room: 32000,
     Deluxe_Room: 34000,
-    Suite_Room: 38000
+    Suite_Room: 38000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1107,7 +1108,7 @@ exports.PackageList = [
     Twin_Sharing: 54000,
     Single_Room: 62000,
     Deluxe_Room: 67000,
-    Suite_Room: 74000
+    Suite_Room: 74000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1122,7 +1123,7 @@ exports.PackageList = [
     Twin_Sharing: 41000,
     Single_Room: 47000,
     Deluxe_Room: 50000,
-    Suite_Room: 56000
+    Suite_Room: 56000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1137,7 +1138,7 @@ exports.PackageList = [
     Twin_Sharing: 17000,
     Single_Room: 19000,
     Deluxe_Room: 21000,
-    Suite_Room: 23000
+    Suite_Room: 23000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1152,7 +1153,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1167,7 +1168,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1182,7 +1183,7 @@ exports.PackageList = [
     Twin_Sharing: 168000,
     Single_Room: 190000,
     Deluxe_Room: 206000,
-    Suite_Room: 228000
+    Suite_Room: 228000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1197,7 +1198,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1212,7 +1213,7 @@ exports.PackageList = [
     Twin_Sharing: 51000,
     Single_Room: 58000,
     Deluxe_Room: 63000,
-    Suite_Room: 69000
+    Suite_Room: 69000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1227,7 +1228,7 @@ exports.PackageList = [
     Twin_Sharing: 41000,
     Single_Room: 47000,
     Deluxe_Room: 50000,
-    Suite_Room: 56000
+    Suite_Room: 56000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1235,14 +1236,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 9278,
     Ref_Service_Code: "OP2044",
-    Service_Name: "VITRECTOMY WITHOUT SOI (LASER+BUCKLE+MEMBRANE PEELING ADDITIONAL)",
+    Service_Name:
+      "VITRECTOMY WITHOUT SOI (LASER+BUCKLE+MEMBRANE PEELING ADDITIONAL)",
     OPD: 83000,
     IPD: "",
     Four_Sharing: 83000,
     Twin_Sharing: 92000,
     Single_Room: 104000,
     Deluxe_Room: 113000,
-    Suite_Room: 125000
+    Suite_Room: 125000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1250,14 +1252,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 8450,
     Ref_Service_Code: "OP2053",
-    Service_Name: "ACCELERATED C3R (Corneal COLLAGEN CROSS LINKING WITH RIBOFLAVIN ( Both Eyes)",
+    Service_Name:
+      "ACCELERATED C3R (Corneal COLLAGEN CROSS LINKING WITH RIBOFLAVIN ( Both Eyes)",
     OPD: 91000,
     IPD: "",
     Four_Sharing: 91000,
     Twin_Sharing: 101000,
     Single_Room: 114000,
     Deluxe_Room: 123000,
-    Suite_Room: 137000
+    Suite_Room: 137000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1265,14 +1268,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 8451,
     Ref_Service_Code: "OP2054",
-    Service_Name: "ACCELERATED C3R (CORNEAL COLLAGEN CROSS LINKING WITH RIBOFLAVIN ( One Eye)",
+    Service_Name:
+      "ACCELERATED C3R (CORNEAL COLLAGEN CROSS LINKING WITH RIBOFLAVIN ( One Eye)",
     OPD: 49000,
     IPD: "",
     Four_Sharing: 49000,
     Twin_Sharing: 54000,
     Single_Room: 62000,
     Deluxe_Room: 67000,
-    Suite_Room: 74000
+    Suite_Room: 74000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1287,7 +1291,7 @@ exports.PackageList = [
     Twin_Sharing: 54000,
     Single_Room: 62000,
     Deluxe_Room: 67000,
-    Suite_Room: 74000
+    Suite_Room: 74000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1302,7 +1306,7 @@ exports.PackageList = [
     Twin_Sharing: 134000,
     Single_Room: 152000,
     Deluxe_Room: 164000,
-    Suite_Room: 182000
+    Suite_Room: 182000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1317,7 +1321,7 @@ exports.PackageList = [
     Twin_Sharing: 41000,
     Single_Room: 47000,
     Deluxe_Room: 50000,
-    Suite_Room: 56000
+    Suite_Room: 56000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1332,7 +1336,7 @@ exports.PackageList = [
     Twin_Sharing: 30000,
     Single_Room: 34000,
     Deluxe_Room: 37000,
-    Suite_Room: 41000
+    Suite_Room: 41000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1347,7 +1351,7 @@ exports.PackageList = [
     Twin_Sharing: 5000,
     Single_Room: 5000,
     Deluxe_Room: 6000,
-    Suite_Room: 6000
+    Suite_Room: 6000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1362,7 +1366,7 @@ exports.PackageList = [
     Twin_Sharing: 7000,
     Single_Room: 8000,
     Deluxe_Room: 9000,
-    Suite_Room: 9000
+    Suite_Room: 9000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1377,7 +1381,7 @@ exports.PackageList = [
     Twin_Sharing: 9000,
     Single_Room: 10000,
     Deluxe_Room: 11000,
-    Suite_Room: 12000
+    Suite_Room: 12000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1392,7 +1396,7 @@ exports.PackageList = [
     Twin_Sharing: 9000,
     Single_Room: 10000,
     Deluxe_Room: 11000,
-    Suite_Room: 12000
+    Suite_Room: 12000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1407,7 +1411,7 @@ exports.PackageList = [
     Twin_Sharing: 11000,
     Single_Room: 13000,
     Deluxe_Room: 14000,
-    Suite_Room: 15000
+    Suite_Room: 15000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1422,7 +1426,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1437,7 +1441,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1452,7 +1456,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1467,7 +1471,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1482,7 +1486,7 @@ exports.PackageList = [
     Twin_Sharing: 13000,
     Single_Room: 14000,
     Deluxe_Room: 15000,
-    Suite_Room: 17000
+    Suite_Room: 17000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1490,14 +1494,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 19957,
     Ref_Service_Code: "OP9087",
-    Service_Name: "Intravitreal Inj Of Antbiotics for Endoph under LA ( Cost Of Medicines Additional))",
+    Service_Name:
+      "Intravitreal Inj Of Antbiotics for Endoph under LA ( Cost Of Medicines Additional))",
     OPD: 13000,
     IPD: "",
     Four_Sharing: 13000,
     Twin_Sharing: 15000,
     Single_Room: 17000,
     Deluxe_Room: 18000,
-    Suite_Room: 20000
+    Suite_Room: 20000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1512,7 +1517,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1527,7 +1532,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1542,7 +1547,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1557,7 +1562,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1572,7 +1577,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1587,7 +1592,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1602,7 +1607,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1617,7 +1622,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1632,7 +1637,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1647,7 +1652,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1662,7 +1667,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1677,7 +1682,7 @@ exports.PackageList = [
     Twin_Sharing: 25000,
     Single_Room: 28000,
     Deluxe_Room: 30000,
-    Suite_Room: 33000
+    Suite_Room: 33000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1692,7 +1697,7 @@ exports.PackageList = [
     Twin_Sharing: 28000,
     Single_Room: 32000,
     Deluxe_Room: 34000,
-    Suite_Room: 38000
+    Suite_Room: 38000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1707,7 +1712,7 @@ exports.PackageList = [
     Twin_Sharing: 28000,
     Single_Room: 32000,
     Deluxe_Room: 34000,
-    Suite_Room: 38000
+    Suite_Room: 38000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1722,7 +1727,7 @@ exports.PackageList = [
     Twin_Sharing: 30000,
     Single_Room: 34000,
     Deluxe_Room: 37000,
-    Suite_Room: 41000
+    Suite_Room: 41000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1737,7 +1742,7 @@ exports.PackageList = [
     Twin_Sharing: 31000,
     Single_Room: 35000,
     Deluxe_Room: 38000,
-    Suite_Room: 42000
+    Suite_Room: 42000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1752,7 +1757,7 @@ exports.PackageList = [
     Twin_Sharing: 31000,
     Single_Room: 35000,
     Deluxe_Room: 38000,
-    Suite_Room: 42000
+    Suite_Room: 42000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1767,7 +1772,7 @@ exports.PackageList = [
     Twin_Sharing: 31000,
     Single_Room: 35000,
     Deluxe_Room: 38000,
-    Suite_Room: 42000
+    Suite_Room: 42000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1782,7 +1787,7 @@ exports.PackageList = [
     Twin_Sharing: 32000,
     Single_Room: 37000,
     Deluxe_Room: 40000,
-    Suite_Room: 44000
+    Suite_Room: 44000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1797,7 +1802,7 @@ exports.PackageList = [
     Twin_Sharing: 35000,
     Single_Room: 39000,
     Deluxe_Room: 42000,
-    Suite_Room: 47000
+    Suite_Room: 47000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1812,7 +1817,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1827,7 +1832,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1842,7 +1847,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1857,7 +1862,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1872,7 +1877,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1887,7 +1892,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1902,7 +1907,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1917,7 +1922,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1932,7 +1937,7 @@ exports.PackageList = [
     Twin_Sharing: 40000,
     Single_Room: 45000,
     Deluxe_Room: 49000,
-    Suite_Room: 54000
+    Suite_Room: 54000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1947,7 +1952,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1962,7 +1967,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1977,7 +1982,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -1992,7 +1997,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2007,7 +2012,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2022,7 +2027,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2037,7 +2042,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2052,7 +2057,7 @@ exports.PackageList = [
     Twin_Sharing: 43000,
     Single_Room: 49000,
     Deluxe_Room: 53000,
-    Suite_Room: 59000
+    Suite_Room: 59000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2067,7 +2072,7 @@ exports.PackageList = [
     Twin_Sharing: 47000,
     Single_Room: 53000,
     Deluxe_Room: 57000,
-    Suite_Room: 63000
+    Suite_Room: 63000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2082,7 +2087,7 @@ exports.PackageList = [
     Twin_Sharing: 47000,
     Single_Room: 53000,
     Deluxe_Room: 57000,
-    Suite_Room: 63000
+    Suite_Room: 63000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2097,7 +2102,7 @@ exports.PackageList = [
     Twin_Sharing: 47000,
     Single_Room: 53000,
     Deluxe_Room: 57000,
-    Suite_Room: 63000
+    Suite_Room: 63000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2112,7 +2117,7 @@ exports.PackageList = [
     Twin_Sharing: 47000,
     Single_Room: 53000,
     Deluxe_Room: 57000,
-    Suite_Room: 63000
+    Suite_Room: 63000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2127,7 +2132,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2142,7 +2147,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2157,7 +2162,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2172,7 +2177,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2187,7 +2192,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2202,7 +2207,7 @@ exports.PackageList = [
     Twin_Sharing: 49000,
     Single_Room: 55000,
     Deluxe_Room: 60000,
-    Suite_Room: 66000
+    Suite_Room: 66000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2210,14 +2215,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 20014,
     Ref_Service_Code: "OP9142",
-    Service_Name: "Accelerated C3R (Collagen Cross Linking with Riboflavin One Eye)",
+    Service_Name:
+      "Accelerated C3R (Collagen Cross Linking with Riboflavin One Eye)",
     OPD: 49000,
     IPD: "",
     Four_Sharing: 49000,
     Twin_Sharing: 54000,
     Single_Room: 62000,
     Deluxe_Room: 67000,
-    Suite_Room: 74000
+    Suite_Room: 74000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2232,7 +2238,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2247,7 +2253,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2262,7 +2268,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2277,7 +2283,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2292,7 +2298,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2300,14 +2306,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 20020,
     Ref_Service_Code: "OP9148",
-    Service_Name: "Pterygium Excision with Conjunctival Autografting Sutureless with Glue",
+    Service_Name:
+      "Pterygium Excision with Conjunctival Autografting Sutureless with Glue",
     OPD: 50000,
     IPD: "",
     Four_Sharing: 50000,
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2322,7 +2329,7 @@ exports.PackageList = [
     Twin_Sharing: 55000,
     Single_Room: 63000,
     Deluxe_Room: 68000,
-    Suite_Room: 75000
+    Suite_Room: 75000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2337,7 +2344,7 @@ exports.PackageList = [
     Twin_Sharing: 60000,
     Single_Room: 68000,
     Deluxe_Room: 73000,
-    Suite_Room: 81000
+    Suite_Room: 81000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2352,7 +2359,7 @@ exports.PackageList = [
     Twin_Sharing: 61000,
     Single_Room: 69000,
     Deluxe_Room: 75000,
-    Suite_Room: 83000
+    Suite_Room: 83000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2367,7 +2374,7 @@ exports.PackageList = [
     Twin_Sharing: 61000,
     Single_Room: 69000,
     Deluxe_Room: 75000,
-    Suite_Room: 83000
+    Suite_Room: 83000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2382,7 +2389,7 @@ exports.PackageList = [
     Twin_Sharing: 61000,
     Single_Room: 69000,
     Deluxe_Room: 75000,
-    Suite_Room: 83000
+    Suite_Room: 83000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2397,7 +2404,7 @@ exports.PackageList = [
     Twin_Sharing: 61000,
     Single_Room: 69000,
     Deluxe_Room: 75000,
-    Suite_Room: 83000
+    Suite_Room: 83000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2412,7 +2419,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2427,7 +2434,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2442,7 +2449,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2457,7 +2464,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2472,7 +2479,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2487,7 +2494,7 @@ exports.PackageList = [
     Twin_Sharing: 68000,
     Single_Room: 77000,
     Deluxe_Room: 83000,
-    Suite_Room: 92000
+    Suite_Room: 92000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2502,7 +2509,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2517,7 +2524,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2532,7 +2539,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2547,7 +2554,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2562,7 +2569,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2577,7 +2584,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2592,7 +2599,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2607,7 +2614,7 @@ exports.PackageList = [
     Twin_Sharing: 80000,
     Single_Room: 90000,
     Deluxe_Room: 98000,
-    Suite_Room: 108000
+    Suite_Room: 108000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2622,7 +2629,7 @@ exports.PackageList = [
     Twin_Sharing: 81000,
     Single_Room: 92000,
     Deluxe_Room: 99000,
-    Suite_Room: 110000
+    Suite_Room: 110000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2637,7 +2644,7 @@ exports.PackageList = [
     Twin_Sharing: 85000,
     Single_Room: 97000,
     Deluxe_Room: 104000,
-    Suite_Room: 116000
+    Suite_Room: 116000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2652,7 +2659,7 @@ exports.PackageList = [
     Twin_Sharing: 85000,
     Single_Room: 97000,
     Deluxe_Room: 104000,
-    Suite_Room: 116000
+    Suite_Room: 116000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2667,7 +2674,7 @@ exports.PackageList = [
     Twin_Sharing: 91000,
     Single_Room: 103000,
     Deluxe_Room: 111000,
-    Suite_Room: 123000
+    Suite_Room: 123000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2682,7 +2689,7 @@ exports.PackageList = [
     Twin_Sharing: 92000,
     Single_Room: 104000,
     Deluxe_Room: 113000,
-    Suite_Room: 125000
+    Suite_Room: 125000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2697,7 +2704,7 @@ exports.PackageList = [
     Twin_Sharing: 97000,
     Single_Room: 110000,
     Deluxe_Room: 119000,
-    Suite_Room: 132000
+    Suite_Room: 132000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2712,7 +2719,7 @@ exports.PackageList = [
     Twin_Sharing: 97000,
     Single_Room: 110000,
     Deluxe_Room: 119000,
-    Suite_Room: 132000
+    Suite_Room: 132000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2720,14 +2727,15 @@ exports.PackageList = [
     Department_Type: "IPD PACKAGES",
     ServiceId: 20054,
     Ref_Service_Code: "OP9182",
-    Service_Name: "Accelerated C3R (Collagen Cross Linking with Riboflavin Both Eyes)",
+    Service_Name:
+      "Accelerated C3R (Collagen Cross Linking with Riboflavin Both Eyes)",
     OPD: 93000,
     IPD: "",
     Four_Sharing: 93000,
     Twin_Sharing: 103000,
     Single_Room: 117000,
     Deluxe_Room: 126000,
-    Suite_Room: 140000
+    Suite_Room: 140000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2742,7 +2750,7 @@ exports.PackageList = [
     Twin_Sharing: 104000,
     Single_Room: 118000,
     Deluxe_Room: 127000,
-    Suite_Room: 141000
+    Suite_Room: 141000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2757,7 +2765,7 @@ exports.PackageList = [
     Twin_Sharing: 104000,
     Single_Room: 118000,
     Deluxe_Room: 127000,
-    Suite_Room: 141000
+    Suite_Room: 141000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2772,7 +2780,7 @@ exports.PackageList = [
     Twin_Sharing: 104000,
     Single_Room: 118000,
     Deluxe_Room: 127000,
-    Suite_Room: 141000
+    Suite_Room: 141000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2787,7 +2795,7 @@ exports.PackageList = [
     Twin_Sharing: 109000,
     Single_Room: 124000,
     Deluxe_Room: 134000,
-    Suite_Room: 149000
+    Suite_Room: 149000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2802,7 +2810,7 @@ exports.PackageList = [
     Twin_Sharing: 182000,
     Single_Room: 207000,
     Deluxe_Room: 223000,
-    Suite_Room: 248000
+    Suite_Room: 248000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2817,7 +2825,7 @@ exports.PackageList = [
     Twin_Sharing: 279000,
     Single_Room: 317000,
     Deluxe_Room: 342000,
-    Suite_Room: 380000
+    Suite_Room: 380000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2832,7 +2840,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2847,7 +2855,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2862,7 +2870,7 @@ exports.PackageList = [
     Twin_Sharing: 73000,
     Single_Room: 83000,
     Deluxe_Room: 90000,
-    Suite_Room: 99000
+    Suite_Room: 99000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2877,7 +2885,7 @@ exports.PackageList = [
     Twin_Sharing: 92000,
     Single_Room: 104000,
     Deluxe_Room: 113000,
-    Suite_Room: 125000
+    Suite_Room: 125000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2892,7 +2900,7 @@ exports.PackageList = [
     Twin_Sharing: 92000,
     Single_Room: 104000,
     Deluxe_Room: 113000,
-    Suite_Room: 125000
+    Suite_Room: 125000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2907,7 +2915,7 @@ exports.PackageList = [
     Twin_Sharing: 134000,
     Single_Room: 152000,
     Deluxe_Room: 164000,
-    Suite_Room: 182000
+    Suite_Room: 182000,
   },
   {
     Department_Name: "OPTHALMOLOGY",
@@ -2922,7 +2930,7 @@ exports.PackageList = [
     Twin_Sharing: 37000,
     Single_Room: 42000,
     Deluxe_Room: 45000,
-    Suite_Room: 50000
+    Suite_Room: 50000,
   },
   {
     Department_Name: "ORTHOPEDIC",
@@ -2937,7 +2945,7 @@ exports.PackageList = [
     Twin_Sharing: 267000,
     Single_Room: 303000,
     Deluxe_Room: 327000,
-    Suite_Room: 363000
+    Suite_Room: 363000,
   },
   {
     Department_Name: "ORTHOPEDIC",
@@ -2952,7 +2960,7 @@ exports.PackageList = [
     Twin_Sharing: 346000,
     Single_Room: 393000,
     Deluxe_Room: 424000,
-    Suite_Room: 471000
+    Suite_Room: 471000,
   },
   {
     Department_Name: "ORTHOPEDIC",
@@ -2967,7 +2975,7 @@ exports.PackageList = [
     Twin_Sharing: 267000,
     Single_Room: 303000,
     Deluxe_Room: 327000,
-    Suite_Room: 363000
+    Suite_Room: 363000,
   },
   {
     Department_Name: "ORTHOPEDIC",
@@ -2982,7 +2990,7 @@ exports.PackageList = [
     Twin_Sharing: 346000,
     Single_Room: 393000,
     Deluxe_Room: 424000,
-    Suite_Room: 471000
+    Suite_Room: 471000,
   },
   {
     Department_Name: "PAIN CLINIC",
@@ -2997,7 +3005,7 @@ exports.PackageList = [
     Twin_Sharing: 19000,
     Single_Room: 22000,
     Deluxe_Room: 23000,
-    Suite_Room: 26000
+    Suite_Room: 26000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3012,7 +3020,7 @@ exports.PackageList = [
     Twin_Sharing: 64000,
     Single_Room: 73000,
     Deluxe_Room: 79000,
-    Suite_Room: 87000
+    Suite_Room: 87000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3027,7 +3035,7 @@ exports.PackageList = [
     Twin_Sharing: 79000,
     Single_Room: 89000,
     Deluxe_Room: 96000,
-    Suite_Room: 107000
+    Suite_Room: 107000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3042,7 +3050,7 @@ exports.PackageList = [
     Twin_Sharing: 107000,
     Single_Room: 122000,
     Deluxe_Room: 131000,
-    Suite_Room: 146000
+    Suite_Room: 146000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3057,7 +3065,7 @@ exports.PackageList = [
     Twin_Sharing: 85000,
     Single_Room: 97000,
     Deluxe_Room: 104000,
-    Suite_Room: 116000
+    Suite_Room: 116000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3072,7 +3080,7 @@ exports.PackageList = [
     Twin_Sharing: 107000,
     Single_Room: 122000,
     Deluxe_Room: 131000,
-    Suite_Room: 146000
+    Suite_Room: 146000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3087,7 +3095,7 @@ exports.PackageList = [
     Twin_Sharing: 85000,
     Single_Room: 97000,
     Deluxe_Room: 104000,
-    Suite_Room: 116000
+    Suite_Room: 116000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3102,7 +3110,7 @@ exports.PackageList = [
     Twin_Sharing: 107000,
     Single_Room: 122000,
     Deluxe_Room: 131000,
-    Suite_Room: 146000
+    Suite_Room: 146000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3117,7 +3125,7 @@ exports.PackageList = [
     Twin_Sharing: 142000,
     Single_Room: 162000,
     Deluxe_Room: 175000,
-    Suite_Room: 194000
+    Suite_Room: 194000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3132,7 +3140,7 @@ exports.PackageList = [
     Twin_Sharing: 85000,
     Single_Room: 97000,
     Deluxe_Room: 104000,
-    Suite_Room: 116000
+    Suite_Room: 116000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3147,7 +3155,7 @@ exports.PackageList = [
     Twin_Sharing: 72000,
     Single_Room: 82000,
     Deluxe_Room: 88000,
-    Suite_Room: 98000
+    Suite_Room: 98000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3162,7 +3170,7 @@ exports.PackageList = [
     Twin_Sharing: 170000,
     Single_Room: 193000,
     Deluxe_Room: 208000,
-    Suite_Room: 231000
+    Suite_Room: 231000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3177,7 +3185,7 @@ exports.PackageList = [
     Twin_Sharing: 79000,
     Single_Room: 89000,
     Deluxe_Room: 96000,
-    Suite_Room: 107000
+    Suite_Room: 107000,
   },
   {
     Department_Name: "PLASTIC SURGERY",
@@ -3192,7 +3200,7 @@ exports.PackageList = [
     Twin_Sharing: 88000,
     Single_Room: 100000,
     Deluxe_Room: 108000,
-    Suite_Room: 120000
+    Suite_Room: 120000,
   },
   {
     Department_Name: "RENAL TRANSPLANT",
@@ -3207,7 +3215,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 431000,
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "RENAL TRANSPLANT",
@@ -3222,7 +3230,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 452000,
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "RENAL TRANSPLANT",
@@ -3237,7 +3245,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 473000,
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "RENAL TRANSPLANT",
@@ -3252,7 +3260,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: 536000,
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "SPINE",
@@ -3267,7 +3275,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "SPINE",
@@ -3282,7 +3290,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "SPINE",
@@ -3297,7 +3305,7 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
+    Suite_Room: "",
   },
   {
     Department_Name: "UROLOGY",
@@ -3312,7 +3320,7 @@ exports.PackageList = [
     Twin_Sharing: 1820,
     Single_Room: 2120,
     Deluxe_Room: 2300,
-    Suite_Room: 2420
+    Suite_Room: 2420,
   },
   {
     Department_Name: "UROLOGY",
@@ -3327,6 +3335,6 @@ exports.PackageList = [
     Twin_Sharing: "",
     Single_Room: "",
     Deluxe_Room: "",
-    Suite_Room: ""
-  }
-]
+    Suite_Room: "",
+  },
+];

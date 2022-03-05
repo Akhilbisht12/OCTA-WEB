@@ -67,7 +67,7 @@ const Investigation = ({
   return (
     <div>
       <div style={{ width: "80%" }}>
-        <div style={{ display: item.Service_Name ? "none" : "flex" }}>
+        <div style={{ display: item.Service_Name ? "none" : "block" }}>
           <input
             placeholder="find service"
             onChange={(e) => handleSearchPres(e.target.value)}
