@@ -85,7 +85,7 @@ const Surgery = ({
       <div style={{ width: "80%" }}>
         <div
           className="flex-column"
-          style={{ display: item.Service_Name ? "none" : "flex" }}
+          style={{ display: item.Service_Name ? "none" : "block" }}
         >
           <input
             placeholder="find service"

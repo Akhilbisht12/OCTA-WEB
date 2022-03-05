@@ -41,7 +41,7 @@ const Tickets = () => {
   const changeStatus = async (session, status) => {
     try {
       const statusChanged = await axios.post(
-        "http://localhost:3333/api/v1/lms/changeStatus",
+        "https://octahealth.link/api/v1/lms/changeStatus",
         {
           session,
           status,
@@ -58,7 +58,7 @@ const Tickets = () => {
   const changePriority = async (session, priority) => {
     try {
       const priorityChanged = await axios.post(
-        "http://localhost:3333/api/v1/lms/changePriority",
+        "https://octahealth.link/api/v1/lms/changePriority",
         {
           session,
           priority,
@@ -199,7 +199,7 @@ const Tickets = () => {
       ),
     },
     {
-      title: "Deal Age",
+      title: "Lead Age",
       dataIndex: "createddate",
       sorter: (a, b) => {
         const d1 = new Date(a.createddate);
@@ -210,7 +210,7 @@ const Tickets = () => {
     },
 
     {
-      title: "Deal Value",
+      title: "Lead Value",
       dataIndex: "dealvalue",
       sorter: (a, b) => a.lastreply.length - b.lastreply.length,
     },
