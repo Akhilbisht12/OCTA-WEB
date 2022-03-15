@@ -19,15 +19,33 @@ import TicketActions from "./TicketActions";
 import ShowExpandedPatient from "./ShowExpandedPatient";
 import PhoneView from "./PhoneView";
 import { SERVER_URL } from "../../../config/variables";
+import CloseWon from "./CloseWon";
+import CloseFailed from "./CloseFailed";
+import CloseFailed2 from "./CloseFailed2";
 
 const Tickets = () => {
   const [data, setData] = useState([]);
 
+  const [showModalWon, setModalWon] = useState(false);
+  const [showModalFailed, setModalFailed] = useState(false);
   const [render, setrender] = useState(true);
   const [showPhone, setShowPhone] = useState(false);
   const [filter, setFilter] = useState("");
   const [show, setShow] = useState(false);
   const [actionPatient, setActionPatient] = useState({});
+
+  const checkStausChange = (value) => {
+    switch (value) {
+      case "closedwon":
+        setModalWon(true);
+        break;
+      case "closedfailed":
+        setModalFailed(true);
+      default:
+        changeStatus();
+        break;
+    }
+  };
 
   useEffect(() => {
     if ($(".select").length > 0) {
@@ -301,7 +319,10 @@ const Tickets = () => {
       render: (text, record) => (
         <Select
           className=""
-          onChange={(value) => changeStatus(record.data._id, value)}
+          onChange={(value) => {
+            checkStausChange(value);
+            setActionPatient({ ...record.data, value });
+          }}
           style={{ width: 120 }}
           value={text}
         >
@@ -999,6 +1020,18 @@ const Tickets = () => {
       </div>
       {/* /Delete Ticket Modal */}
       <TicketActions session={actionPatient} show={show} setShow={setShow} />
+      <CloseWon
+        changeStatus={changeStatus}
+        show={showModalWon}
+        setModalWon={setModalWon}
+        record={actionPatient}
+      />
+      <CloseFailed2
+        changeStatus={changeStatus}
+        show={showModalFailed}
+        setModalFailed={setModalFailed}
+        record={actionPatient}
+      />
       <PhoneView
         showPhone={showPhone}
         record={actionPatient}
