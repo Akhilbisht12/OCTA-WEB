@@ -21,7 +21,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Prescription Uploaded
                         </a>
                         <span className="time">
@@ -44,7 +44,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Estimate Created
                         </a>
                         <span className="time">
@@ -67,7 +67,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Automated Conversations Sent
                         </a>
                         <span className="time">
@@ -90,7 +90,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           First Follow up
                         </a>
                         <span className="time">
@@ -123,7 +123,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Second Follow Up
                         </a>
                         <span className="time">
@@ -144,7 +144,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Third Follow Up
                         </a>
                         <span className="time">
@@ -167,7 +167,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Fourth Follow Up
                         </a>
                         <span className="time">
@@ -190,7 +190,7 @@ const Timeline = ({ record }) => {
                     </div>
                     <div className="experience-content">
                       <div className="timeline-content">
-                        <a href="/" className="name">
+                        <a href="#" className="name">
                           Lead Closed
                         </a>
                         <span className="time">

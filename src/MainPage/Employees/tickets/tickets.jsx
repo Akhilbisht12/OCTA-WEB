@@ -41,7 +41,7 @@ const Tickets = () => {
   const changeStatus = async (session, status) => {
     try {
       const statusChanged = await axios.post(
-        "https://octahealth.link/api/v1/lms/changeStatus",
+        `${SERVER_URL}/api/v1/lms/changeStatus`,
         {
           session,
           status,
@@ -58,7 +58,7 @@ const Tickets = () => {
   const changePriority = async (session, priority) => {
     try {
       const priorityChanged = await axios.post(
-        "https://octahealth.link/api/v1/lms/changePriority",
+        `${SERVER_URL}/api/v1/lms/changePriority`,
         {
           session,
           priority,

@@ -21,7 +21,7 @@ const ShowExpandedPatient = ({ record, render, setrender, changeState }) => {
       const createnote = await axios.post(`${SERVER_URL}/api/v1/lms/addNote`, {
         sessionId: record.id,
         agentId: "61bc417ee91b155be2ba19ca",
-        note,
+        note: record.data.status + ": " + note,
       });
       if (createnote.status === 200) {
         alert("note added");
@@ -46,18 +46,26 @@ const ShowExpandedPatient = ({ record, render, setrender, changeState }) => {
         <div className="col-3">
           <div className="w-100">
             <div className="text-primary">Packages</div>
-            <div>
+            <div className="text-wrap">
               {record.data.estimate
                 ? record.data.estimate.packages.map((item) => {
-                    return <div key={item.ServiceId}>{item.Service_Name}</div>;
+                    return (
+                      <div className="text-wrap" key={item.ServiceId}>
+                        {item.Service_Name}
+                      </div>
+                    );
                   })
                 : "no packages added"}
             </div>
             <div className="text-primary">Surgeries</div>
-            <div>
+            <div className="text-wrap">
               {record.data.estimate
                 ? record.data.estimate.services.map((item) => {
-                    return <div key={item.ServiceId}>{item.Service_Name}</div>;
+                    return (
+                      <div className="text-wrap" key={item.ServiceId}>
+                        {item.Service_Name}
+                      </div>
+                    );
                   })
                 : "no surgeries added"}
             </div>

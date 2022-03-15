@@ -1,1 +1,1 @@
-exports.SERVER_URL = "https://octahealth.link";
+exports.SERVER_URL = "http://localhost:4000";
