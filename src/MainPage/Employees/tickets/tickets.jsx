@@ -7,7 +7,6 @@ import {
   Avatar_02,
   Avatar_10,
   Avatar_05,
-  Avatar_08,
 } from "../../../Entryfile/imagepath";
 import axios from "axios";
 import { Select, Table } from "antd";
@@ -33,29 +32,6 @@ const Tickets = () => {
   const [filter, setFilter] = useState("");
   const [show, setShow] = useState(false);
   const [actionPatient, setActionPatient] = useState({});
-
-  const checkStausChange = (value) => {
-    switch (value) {
-      case "closedwon":
-        setModalWon(true);
-        break;
-      case "closedfailed":
-        setModalFailed(true);
-      default:
-        changeStatus();
-        break;
-    }
-  };
-
-  useEffect(() => {
-    if ($(".select").length > 0) {
-      $(".select").select2({
-        minimumResultsForSearch: -1,
-        width: "100%",
-      });
-    }
-  });
-
   const changeStatus = async (session, status) => {
     try {
       const statusChanged = await axios.post(
@@ -73,6 +49,44 @@ const Tickets = () => {
     }
     setrender(!render);
   };
+  const checkStausChange = (value) => {
+    alert(actionPatient._id);
+    console.log(actionPatient);
+    switch (value) {
+      case "open":
+        changeStatus(actionPatient._id, value);
+        break;
+      case "firstfollowup":
+        changeStatus(actionPatient._id, value);
+        break;
+      case "secondfollowup":
+        changeStatus(actionPatient._id, value);
+        break;
+      case "thirdfollowup":
+        changeStatus(actionPatient._id, value);
+        break;
+      case "closedwon":
+        setModalWon(true);
+        break;
+      case "fourthfollowup":
+        changeStatus(actionPatient._id, value);
+        break;
+      case "closedfailed":
+        setModalFailed(true);
+      default:
+        break;
+    }
+  };
+
+  useEffect(() => {
+    if ($(".select").length > 0) {
+      $(".select").select2({
+        minimumResultsForSearch: -1,
+        width: "100%",
+      });
+    }
+  });
+
   const changePriority = async (session, priority) => {
     try {
       const priorityChanged = await axios.post(
@@ -320,8 +334,15 @@ const Tickets = () => {
         <Select
           className=""
           onChange={(value) => {
-            checkStausChange(value);
-            setActionPatient({ ...record.data, value });
+            if (value === "closedwon") {
+              setActionPatient({ ...record.data, value });
+              setModalWon(true);
+            } else if (value === "closedfailed") {
+              setActionPatient({ ...record.data, value });
+              setModalFailed(true);
+            } else {
+              changeStatus(record.id, value);
+            }
           }}
           style={{ width: 120 }}
           value={text}
@@ -1025,10 +1046,12 @@ const Tickets = () => {
         show={showModalWon}
         setModalWon={setModalWon}
         record={actionPatient}
+        render={render}
+        setrender={setrender}
       />
-      <CloseFailed2
+      <CloseFailed
         changeStatus={changeStatus}
-        show={showModalFailed}
+        showModalFailed={showModalFailed}
         setModalFailed={setModalFailed}
         record={actionPatient}
       />

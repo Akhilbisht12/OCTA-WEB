@@ -1,18 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import {
-  Avatar_19,
-  Avatar_29,
-  Avatar_07,
-  Avatar_06,
-  Avatar_14,
-  Avatar_18,
-  Avatar_28,
-  Avatar_13,
-} from "../../Entryfile/imagepath";
+import { Avatar_07 } from "../../../Entryfile/imagepath";
+
+import { Table } from "antd";
+import "antd/dist/antd.css";
+import { itemRender, onShowSizeChange } from "../../paginationfunction";
+import "../../antdstyle.css";
 
 const Clients = () => {
+  const [data, setData] = useState([
+    {
+      id: 1,
+      image: Avatar_07,
+      name: "John Doe",
+      client_id: "CLT-0001",
+      contactperson: "Barry Cuda",
+      email: "barrycuda@example.com",
+      mobile: "9876543210",
+      status: "Active",
+    },
+  ]);
   useEffect(() => {
     if ($(".select").length > 0) {
       $(".select").select2({
@@ -21,10 +29,113 @@ const Clients = () => {
       });
     }
   });
+
+  const columns = [
+    {
+      title: "Name",
+      dataIndex: "name",
+      render: (text, record) => (
+        <h2 className="table-avatar">
+          <Link to="/app/profile/employee-profile" className="avatar">
+            <img alt="" src={record.image} />
+          </Link>
+          <Link to="/app/profile/employee-profile">{text}</Link>
+        </h2>
+      ),
+      sorter: (a, b) => a.name.length - b.name.length,
+    },
+    {
+      title: "Client ID",
+      dataIndex: "client_id",
+      sorter: (a, b) => a.employee_id.length - b.employee_id.length,
+    },
+
+    {
+      title: "Contact Person",
+      dataIndex: "contactperson",
+      sorter: (a, b) => a.contactperson.length - b.contactperson.length,
+    },
+    {
+      title: "Email",
+      dataIndex: "email",
+      sorter: (a, b) => a.email.length - b.email.length,
+    },
+
+    {
+      title: "Mobile",
+      dataIndex: "mobile",
+      sorter: (a, b) => a.mobile.length - b.mobile.length,
+    },
+    {
+      title: "Status",
+      dataIndex: "status",
+      render: (text, record) => (
+        <div className="dropdown">
+          <a
+            href="#"
+            className="btn btn-white btn-sm btn-rounded dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              className={
+                text === "Active"
+                  ? "fa fa-dot-circle-o text-success"
+                  : "fa fa-dot-circle-o text-danger"
+              }
+            />{" "}
+            {text}{" "}
+          </a>
+          <div className="dropdown-menu">
+            <a className="dropdown-item" href="#">
+              <i className="fa fa-dot-circle-o text-success" /> Active
+            </a>
+            <a className="dropdown-item" href="#">
+              <i className="fa fa-dot-circle-o text-danger" /> Inactive
+            </a>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Action",
+      render: (text, record) => (
+        <div className="dropdown dropdown-action text-right">
+          <a
+            href="#"
+            className="action-icon dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="material-icons">more_vert</i>
+          </a>
+          <div className="dropdown-menu dropdown-menu-right">
+            <a
+              className="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#edit_client"
+            >
+              <i className="fa fa-pencil m-r-5" /> Edit
+            </a>
+            <a
+              className="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#delete_client"
+            >
+              <i className="fa fa-trash-o m-r-5" /> Delete
+            </a>
+          </div>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <div className="page-wrapper">
       <Helmet>
-        <title>Medical Counsellors - HRMS Admin Template</title>
+        <title>Clients - HRMS Admin Template</title>
         <meta name="description" content="Login page" />
       </Helmet>
       {/* Page Content */}
@@ -33,12 +144,12 @@ const Clients = () => {
         <div className="page-header">
           <div className="row align-items-center">
             <div className="col">
-              <h3 className="page-title">Medical Counsellors</h3>
+              <h3 className="page-title">Clients</h3>
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
                   <Link to="/app/main/dashboard">Dashboard</Link>
                 </li>
-                <li className="breadcrumb-item active">medical counsellors</li>
+                <li className="breadcrumb-item active">Clients</li>
               </ul>
             </div>
             <div className="col-auto float-right ml-auto">
@@ -48,18 +159,18 @@ const Clients = () => {
                 data-toggle="modal"
                 data-target="#add_client"
               >
-                <i className="fa fa-plus" /> Add counsellors
+                <i className="fa fa-plus" /> Add Client
               </a>
               <div className="view-icons">
                 <Link
                   to="/app/employees/clients"
-                  className="grid-view btn btn-link active"
+                  className="grid-view btn btn-link"
                 >
                   <i className="fa fa-th" />
                 </Link>
                 <Link
                   to="/app/employees/clients-list"
-                  className="list-view btn btn-link"
+                  className="list-view btn btn-link active"
                 >
                   <i className="fa fa-bars" />
                 </Link>
@@ -100,191 +211,26 @@ const Clients = () => {
           </div>
         </div>
         {/* Search Filter */}
-        <div className="row staff-grid-row">
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/client-profile">
-                  <img
-                    className="avatar"
-                    style={{ objectFit: "cover" }}
-                    alt=""
-                    src="https://cdn.pixabay.com/photo/2020/03/30/19/48/indian-girl-4985302_960_720.jpg"
-                  />
-                </Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a
-                  href="#"
-                  className="action-icon dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i className="material-icons">more_vert</i>
-                </a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#edit_client"
-                  >
-                    <i className="fa fa-pencil m-r-5" /> Edit
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#delete_client"
-                  >
-                    <i className="fa fa-trash-o m-r-5" /> Delete
-                  </a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Sneha Kapoor</Link>
-              </h4>
-              <h5 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Medical Counsellor</Link>
-              </h5>
-              {/* <div className="small text-muted">CEO</div> */}
-              <Link
-                onClick={() => localStorage.setItem("minheight", "true")}
-                to="/conversation/chat"
-                className="btn btn-white btn-sm m-t-10 mr-1"
-              >
-                Message
-              </Link>
-              <Link
-                to="/app/profile/client-profile"
-                className="btn btn-white btn-sm m-t-10"
-              >
-                View Profile
-              </Link>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/client-profile">
-                  <img
-                    className="avatar"
-                    style={{ objectFit: "cover" }}
-                    alt=""
-                    src="https://cdn.pixabay.com/photo/2019/09/10/00/32/girl-4464963_960_720.jpg"
-                  />
-                </Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a
-                  href="#"
-                  className="action-icon dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i className="material-icons">more_vert</i>
-                </a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#edit_client"
-                  >
-                    <i className="fa fa-pencil m-r-5" /> Edit
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#delete_client"
-                  >
-                    <i className="fa fa-trash-o m-r-5" /> Delete
-                  </a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Anjali Mehta</Link>
-              </h4>
-              <h5 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Medical Counsellor</Link>
-              </h5>
-              {/* <div className="small text-muted">Manager</div> */}
-              <Link
-                onClick={() => localStorage.setItem("minheight", "true")}
-                to="/conversation/chat"
-                className="btn btn-white btn-sm m-t-10 mr-1"
-              >
-                Message
-              </Link>
-              <Link
-                to="/app/profile/client-profile"
-                className="btn btn-white btn-sm m-t-10"
-              >
-                View Profile
-              </Link>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
-            <div className="profile-widget">
-              <div className="profile-img">
-                <Link to="/app/profile/client-profile">
-                  <img
-                    className="avatar"
-                    style={{ objectFit: "cover" }}
-                    src="https://st.depositphotos.com/1011643/4430/i/950/depositphotos_44309759-stock-photo-young-indian-man-outdoors.jpg"
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div className="dropdown profile-action">
-                <a
-                  href="#"
-                  className="action-icon dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i className="material-icons">more_vert</i>
-                </a>
-                <div className="dropdown-menu dropdown-menu-right">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#edit_client"
-                  >
-                    <i className="fa fa-pencil m-r-5" /> Edit
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#delete_client"
-                  >
-                    <i className="fa fa-trash-o m-r-5" /> Delete
-                  </a>
-                </div>
-              </div>
-              <h4 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Amit Tiwari</Link>
-              </h4>
-              <h5 className="user-name m-t-10 mb-0 text-ellipsis">
-                <Link to="/app/profile/client-profile">Medical Counsellor</Link>
-              </h5>
-              {/* <div className="small text-muted">CEO</div> */}
-              <Link
-                onClick={() => localStorage.setItem("minheight", "true")}
-                to="/conversation/chat"
-                className="btn btn-white btn-sm m-t-10 mr-1"
-              >
-                Message
-              </Link>
-              <Link
-                to="/app/profile/client-profile"
-                className="btn btn-white btn-sm m-t-10"
-              >
-                View Profile
-              </Link>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="table-responsive">
+              <Table
+                className="table-striped"
+                pagination={{
+                  total: data.length,
+                  showTotal: (total, range) =>
+                    `Showing ${range[0]} to ${range[1]} of ${total} entries`,
+                  showSizeChanger: true,
+                  onShowSizeChange: onShowSizeChange,
+                  itemRender: itemRender,
+                }}
+                style={{ overflowX: "auto" }}
+                columns={columns}
+                // bordered
+                dataSource={data}
+                rowKey={(record) => record.id}
+                onChange={console.log("change")}
+              />
             </div>
           </div>
         </div>

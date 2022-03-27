@@ -5,8 +5,8 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 
-import Clients from "./clients";
-import ClientsList from "./clientslist";
+import Clients from "./Agents/agents";
+import ClientsList from "./Agents/agentslist";
 import Leades from "./leades";
 import Tickets from "./tickets/tickets";
 import TicketView from "./ticketsView/ticketview";

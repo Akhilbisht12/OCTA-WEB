@@ -3,7 +3,14 @@ import React, { useState } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 import { SERVER_URL } from "../../../config/variables";
 
-const CloseWon = ({ show, setModalWon, changeStatus, record }) => {
+const CloseWon = ({
+  show,
+  setModalWon,
+  changeStatus,
+  record,
+  render,
+  setrender,
+}) => {
   const [transcID, settranscID] = useState("");
 
   const handleSubmitNote = async () => {
@@ -11,11 +18,12 @@ const CloseWon = ({ show, setModalWon, changeStatus, record }) => {
       const createnote = await axios.post(`${SERVER_URL}/api/v1/lms/addNote`, {
         sessionId: record._id,
         agentId: "61bc417ee91b155be2ba19ca",
-        note: transcID,
+        note: `closed won: ${transcID}`,
       });
       if (createnote.status === 200) {
         changeStatus(record._id, record.value);
         alert("note added");
+        setrender(!render);
       }
     } catch (error) {
       console.log(error);
